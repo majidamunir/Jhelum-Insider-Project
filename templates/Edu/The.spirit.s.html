@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Edu.css/styles.css') }}"> <!-- Include CSS file if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-lGBxjQ5UTzZ3lwUV/QJ/A5qLRo2cpP9Z2zjvNycLurEe4JrvmUuhsoIQkx6x6Atxb/TrV2dJeK2e8OmtS+BXUw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+</head>
+<body class="school-page">
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+              <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+              <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+              <li>
+                <a href="#">ShoppingPoints</a>
+                <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                <ul class="sp-sub-menu sub-menu">
+                  <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                  <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                  <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                <ul class="edu-sub-menu sub-menu">
+                  <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                  <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                  <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                  <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Others</a>
+                <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                <ul class="other-sub-menu sub-menu">
+                  <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                  <li><a href="{{ url_for('service') }}">Services</a></li>
+                  <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                  <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                </ul>
+              </li>
+              
+    
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." id="search-input">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h2 class="sub-heading">THE SPIRIT SCHOOL</h2>
+    <main>
+        <section class="school-details">
+            <h2><i class="fas fa-info-circle"></i> About</h2>
+            <p><i class="fas fa-school"></i>The Spirit School Jhelum is a notable educational institution in the city, dedicated to providing quality education and nurturing the overall development of its students. With a focus on academic excellence and character building, The Spirit School aims to instill values of integrity, responsibility, and compassion in its students. The school offers a range of academic and extracurricular activities to enhance the learning experience and prepare students for success in their future endeavors. Located in Jhelum, Pakistan, The Spirit School is committed to providing a supportive and enriching environment where students can thrive academically and personally.</p>
+            <img src="{{ url_for('static', filename='Edu.pics/spirit.s')}}" alt="" class="school">
+            <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Address:Main Asria Road,, Jhelum, Pakistan</p>
+            <p><i class="fas fa-phone"></i> Phone:0321 5440321</p>
+            <p><i class="fas fa-envelope"></i> amjadshah1@gmail.com</p>
+            <h2><i class="fas fa-globe"></i> Visit School's Site</h2>
+            <p><i class="fas fa-external-link-alt"></i> <a href="https://www.facebook.com/SpiritJhelum/"> The Spirit School's Website</a></p>
+            <!-- Embed Google Map -->
+            <div id="map-container">
+                <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
+                <iframe
+                    width="600" 
+                    height="450"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26788.189819059895!2d73.69695351083982!3d32.93717949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90e24bdc48b7%3A0xf7c9bbab7b844240!2sThe%20Spirit%20School%20Jhelum%20Campus!5e0!3m2!1sen!2s!4v1707024619217!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+    </main>
+</body>
+        <div class=" footer">
+            &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+   
+</html>

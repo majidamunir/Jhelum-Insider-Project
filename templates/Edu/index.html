@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Institute</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Edu.css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-lGBxjQ5UTzZ3lwUV/QJ/A5qLRo2cpP9Z2zjvNycLurEe4JrvmUuhsoIQkx6x6Atxb/TrV2dJeK2e8OmtS+BXUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="{{ url_for('home_page') }}">Home</a></li>
+              <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+              <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+              <li>
+                <a href="#">ShoppingPoints</a>
+                <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                <ul class="sp-sub-menu sub-menu">
+                  <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                  <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                  <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                <ul class="edu-sub-menu sub-menu">
+                  <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                  <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                  <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                  <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Others</a>
+                <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                <ul class="other-sub-menu sub-menu">
+                  <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                  <li><a href="{{ url_for('service') }}">Services</a></li>
+                  <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                  <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                </ul>
+              </li>
+              
+    
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." id="search-input">
+            </div>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <section id="main-section" class="main">
+            <h1>EDUCATIONAL INSTITUTES</h1>
+            <p>Embark on a journey of knowledge and discovery, where every click opens the door to endless possibilities</p>
+            
+        </section>
+
+        <section id="schools" class="Schools-section">
+            <div class="section-header">
+                <h2>Schools</h2>
+            </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/air.f.jpg')}}" alt="Air Foundation School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Air Foundation School</h3>
+                        <a href="{{ url_for('AFS') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/behria.s')}}" alt="Bahria Foundation School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Bahria Foundation School</h3>
+                        <a href="{{ url_for('BFS') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/allied.s')}}" alt="Allied School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Allied School</h3>
+                        <a href="{{ url_for('Allied') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+            
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/lyceum.s.jpg')}}" alt=" Lyceum International School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Lahore Lyceum School</h3>
+                        <a href="{{ url_for('LLS') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/city.png')}}" alt=" The City School">
+                    </div>
+                    <div class="card-info">
+                        <h3>The City School</h3>
+                        <a href="{{ url_for('City_s') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>        
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/roots.jpg')}}" alt=" Roots Millennium School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Roots International School</h3>
+                        <a href="{{ url_for('roots') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/darearqam.jpg')}}" alt=" Darearqam School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Dar-E-Arqam School</h3>
+                        <a href="{{ url_for('Darearqam') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/fauji.s')}}" alt=" Fauji Foundation School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Fauji Foundation School</h3>
+                        <a href="{{ url_for('FFS') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/spirit s.jpg')}}" alt=" The spirit School">
+                    </div>
+                    <div class="card-info">
+                        <h3>The Spirit School</h3>
+                        <a href="{{ url_for('spirit') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/APS')}}" alt="Army Public School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Army Public School</h3>
+                        <a href="{{ url_for('APS') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/Convent.logo.jpg')}}" alt="Convent School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Convent High School</h3>
+                        <a href="{{ url_for('convent') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>     
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/FG logo.jpg')}}" alt="FG School">
+                    </div>
+                    <div class="card-info">
+                        <h3>FG School</h3>
+                        <a href="{{ url_for('FG') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/educators.logo')}}" alt="Educator School">
+                    </div>
+                    <div class="card-info">
+                        <h3>The Educators School</h3>
+                        <a href="{{ url_for('Educator') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>     
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/gghs kala.jpg')}}" alt="GGHS Kala Gujran School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Govt.  high School Kala Gujran</h3>
+                        <a href="{{ url_for('GHSK') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/gghs.j.logo.jpg')}}" alt="GGHS Jada School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Govt. Girls High School Jada</h3>
+                        <a href="{{ url_for('GGHSJ') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>    
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/gghs.no.1')}}" alt="GGHS No.1 School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Govt. Girls High School NO. 1 Jhelum </h3>
+                        <a href="{{ url_for('GGHS1') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/GHS jada Jhelum.logo.jpg')}}" alt="GHS JadaSchool">
+                    </div>
+                    <div class="card-info">
+                        <h3>Govt. High School Jada Jhelum </h3>
+                        <a href="{{ url_for('GHSJJ') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>  
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ url_for('static', filename='Edu.pics/GovtMCIslamia.logo')}}" alt="GMI School">
+                    </div>
+                    <div class="card-info">
+                        <h3>Govt. Islamia Higher Secondary School Jhelum  </h3>
+                        <a href="{{ url_for('GMI') }}" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>                                                   
+            </section>
+            
+ <section id="Colleges" class="Colleges-section">
+    <div class="section-header">
+     <h2>Colleges</h2>
+       <div class="button-container">
+        <button class="college-btn" onclick="window.location.href='Pgc'">Punjab group Of Colleges Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='BFC'">Bahria Foundation College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='FFC'">Fauji Foundation College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='Aspire.c'">Aspire College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='Riphah'">Riphah International College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='SGC'">Superior Group of Colleges Jhelum </button>
+         <button class="college-btn" onclick="window.location.href='MJC'">MA Jinnah College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='MC'">Mindverse College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='CCJ'">Cadet College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='Millitary'">Millitary College Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='GWC'">Govt. College For Women Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='Post.gc'">Govt. College Tahlianwala Road, Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='GCGTROAD'">Govt. College, G.T. Road Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='Commerce_c'">Govt. Graduate College Of Commerce Jhelum</button>
+         <button class="college-btn" onclick="window.location.href='chakdolat'">GCT, Chak Daulat, Jhelum </button>
+        </div>
+        </section>
+        <section id="Universities" class= "Universities-section">
+       <div class=" section-header">
+        <h2>Universities</h2>
+       <div class="University.button-container">
+        <button class="University-btn" onclick="window.location.href='PUJC'">University Of Punjab Jhelum</button>
+        <button class="University-btn" onclick="window.location.href='AIOU'">Allama Iqbal Open University Jhelum</button>
+        <button class="University-btn" onclick="window.location.href='VU'">Virtual University Jhelum</button>
+        </div>
+         </section>
+         <section id="Islamic Centers" class="Islamic-section">
+            <div class="section-header">
+                <h2>Islamic Centers</h2>
+            </div>
+            <div class="center-row">
+                <div class="center-container">
+                    <div class="center">
+                        <img src="{{ url_for('static', filename='Edu.pics/Minhaj Ul Quran.LOGO')}}" alt="Islamic Center 1 Logo">
+                    </div>
+                    <button class="center-btn" onclick="window.location.href='Minhaj'">Minhaj-ul-Quran</button>
+                </div>
+        
+                <div class="center-container">
+                    <div class="center">
+                        <img src="{{ url_for('static', filename='Edu.pics/AL.NOOR.logo')}}" alt="Islamic Center 2 Logo">
+                    </div>
+                    <button class="center-btn" onclick="window.location.href='Alnoor'">Al.Noor International</button>
+                </div>
+        
+                <div class="center-container">
+                    <div class="center">
+                        <img src="{{ url_for('static', filename='Edu.pics/Jamia Asria.logo')}}" alt="Islamic Center 3 Logo">
+                    </div>
+                    <button class="center-btn" onclick="window.location.href='Jamia_Asria'">Jamia Asria Ahle Hadees</button>
+                </div>
+            <div class="center-container">
+                <div class="center">
+                    <img src="{{ url_for('static', filename='Edu.pics/Jamia.Hanfia.logo')}}" alt="Islamic Center 1 Logo">
+                </div>
+                <button class="center-btn" onclick="window.location.href='Jamia_Hanfia'">Jamia Hanfia Taleem Ul Islam</button>
+            </div>
+            <div class="center-container">
+                <div class="center">
+                    <img src="{{ url_for('static', filename='Edu.pics/Faizan.e.Madinah.logo')}}" alt="Islamic Center 1 Logo">
+                </div>
+                <button class="center-btn" onclick="window.location.href='Faizan_Madina'">Faizaan-e-Madinah</button>
+            </div>
+                <div class="center-container">
+        <div class="center">
+            <img src="{{ url_for('static', filename='Edu.pics/Kanzuliman.logo')}}" alt="Islamic Center 1 Logo">
+        </div>
+        <button class="center-btn" onclick="window.location.href='Kanzul_Iman'">Kanz-Ul-Iman Academy Jhelum</button>
+    </div>
+</div>
+        </section>
+       <!-- Add more centers as needed -->
+</main>
+
+
+</body>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+</html>
+

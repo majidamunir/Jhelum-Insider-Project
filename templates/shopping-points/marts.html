@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marts</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='shopping/mart.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12"> 
+              <nav>
+                <div class="navbar">
+                  <i class='bx bx-menu'></i>
+                  <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+                  <div class="nav-links">
+                    <div class="sidebar-logo">
+                      <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                      <i class='bx bx-x' ></i>
+                    </div>
+                    <ul class="links">
+                      <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                      <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                      <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                      <li>
+                        <a href="#">ShoppingPoints</a>
+                        <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                        <ul class="sp-sub-menu sub-menu">
+                          <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                          <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                          <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                          
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                        <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                        <ul class="edu-sub-menu sub-menu">
+                          <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                          <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                          <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                          <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Others</a>
+                        <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                        <ul class="other-sub-menu sub-menu">
+                          <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                          <li><a href="{{ url_for('service') }}">Services</a></li>
+                          <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                          <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                        </ul>
+                      </li>
+                      
+            
+                    </ul>
+                  </div>
+                  <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                      <input type="text" placeholder="Search..." id="search-input">
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="row" id="Marts">
+            <div class="col">
+              <div class="card text-bg-dark main-img-card">
+                <img src="{{ url_for('static', filename='local-img/mart.png')}}" class="card-img main-img " alt="main img">
+
+                <div class="card-img-overlay">
+                  
+                  <div class="typewriter">
+                    <h1> Local Marts </h1>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row u-mart" id="U-Mart">
+            <h1>U-Mart</h1> 
+          <br>
+            <div class="col-lg-4 col-sm-12 "> <center> <img src="{{ url_for('static', filename='local-img/u.png')}}" alt="dhq"></center>
+              <br>
+            </div>
+            <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+              
+              <p>Serving Since 1999.
+                Established officially as U-Mart in 2007.
+                Flagship store at A&G Mall, Jhelum.
+                Your one stop shopping destination.</p>
+             <a href="https://www.google.com/maps/place/U+Mart/@32.9644031,73.6937017,17z/data=!3m1!4b1!4m6!3m5!1s0x391f919fba9147c9:0x8a89e0987c769a4f!8m2!3d32.9644031!4d73.696282!16s%2Fg%2F1jkvvhzwn?entry=ttu"><i class="bi bi-geo-alt"></i> ground floor, A & G Mall, Grand Trunk Rd, Kala Gujran, Jhelum, Punjab 49600</a>
+             <br>
+            <a href="tel:0307 9595333"> <i class="bi bi-telephone-fill"></i>  0307 9595333</a>
+              <br>
+             <h5><i class="bi bi-alarm"></i> 10:00 am-10:00 pm</h5>
+             <br>
+              <a href="https://www.facebook.com/Umartpakistan/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/u.martpakistan/"><i class="bi bi-instagram"></i></a>
+              <a href="https://umartpakistan.com/"><i class="bi bi-globe"></i></a>
+            </div>
+           
+          
+          </div>
+          <br> <br>
+          
+          <div class="row ajwa" id="Ajwa-Mart">
+            <h1>Ajwa-Mart</h1> 
+          <br>
+            <div class="col-lg-4 col-sm-12 "> <center> <img src="{{ url_for('static', filename='local-img/am.png')}}" alt="dhq"></center>
+            </div>
+            <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+              
+              <p>Ajwa Mart is one of the leading Mart in Jhelum city. Having professional staff with a very professional attitude. Prices of groceries are affordable as compared to other main marts.</p>
+              <a href="https://www.google.com/maps/place/Ajwa+Mart+Jhelum/@32.9261187,73.7160426,17z/data=!3m1!4b1!4m6!3m5!1s0x391f911a045fdd8b:0xd35955a20740f761!8m2!3d32.9261187!4d73.7186229!16s%2Fg%2F11jflvtk4s?entry=ttu"><i class="bi bi-geo-alt"></i> WPG9+CCX, Jhelum Cantt, Jhelum, Punjab</a>
+             <br>
+             <a href="tel:0341-5137928"><i class="bi bi-telephone-fill"></i>  0341-5137928</a>
+             <br>
+             <h5><i class="bi bi-alarm"></i> 9:00 am-12:00 pm</h5>
+             <br>
+              <a href="https://www.facebook.com/Umartpakistan/"><i class="bi bi-facebook"></i></a>
+              
+              <a href="https://ajwamartjhelum.com/outlet/"><i class="bi bi-globe"></i></a>
+            </div>
+          </div>
+            <br> <br>
+          
+          <div class="row Ginza" id="Ginza-mart">
+            <h1>Ginza-mart</h1> 
+          <br>
+            <div class="col-lg-4 col-sm-12 "> <center> <img src="{{ url_for('static', filename='local-img/gm.png')}}" class="ginza" alt="ginza"></center>
+            </div>
+            <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+              
+              <p>At Ginza Mart, we take pride in being Jehlum’s largest and most beloved shopping destination, offering a unique and unparalleled shopping experience to our valued customers. Established with a commitment to provide a diverse range of high-quality products, excellent customer service, and a welcoming atmosphere, Ginza Mart has become a staple in the hearts of the Jehlum community.</p>
+              <a href="https://www.google.com/maps/place/Ginza+Mart/@32.9560737,73.7017839,17z/data=!3m1!4b1!4m6!3m5!1s0x391f91e264dc4151:0xf277d78da0578f97!8m2!3d32.9560737!4d73.7043642!16s%2Fg%2F11rxv33krk?entry=ttu"><i class="bi bi-geo-alt"></i> Near Inter College, Opposite Kashmir Plaza, GT Road, Jehlum</a>
+             <br>
+             <a href="tel:0308 5195859"><i class="bi bi-telephone-fill"></i>  0308 5195859</a>
+             <br>
+             <h5><i class="bi bi-alarm"></i> 10:00 am-11:00 pm</h5>
+             <br>
+              <a href="https://www.facebook.com/Umartpakistan/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ginzamartjhelum"><i class="bi bi-instagram"></i></a>
+              <a href="https://ginzamart.com/"><i class="bi bi-globe"></i></a> <br>
+            </div>
+            </div>
+            <br>
+            <footer>
+              <div class="col copy">
+                &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+            </div>
+            </footer>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='boostrap/boostrap.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

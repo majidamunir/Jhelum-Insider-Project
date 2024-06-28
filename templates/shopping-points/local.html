@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='shopping/local.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> 
+          <nav>
+            <div class="navbar">
+              <i class='bx bx-menu'></i>
+              <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                  <i class='bx bx-x' ></i>
+                </div>
+                <ul class="links">
+                  <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                  <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                  <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                  <li>
+                    <a href="#">ShoppingPoints</a>
+                    <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                    <ul class="sp-sub-menu sub-menu">
+                      <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                      <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                      <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                    <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                    <ul class="edu-sub-menu sub-menu">
+                      <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                      <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                      <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                      <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Others</a>
+                    <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                    <ul class="other-sub-menu sub-menu">
+                      <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                      <li><a href="{{ url_for('service') }}">Services</a></li>
+                      <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                      <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                    </ul>
+                  </li>
+                  
+        
+                </ul>
+              </div>
+              <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                  <input type="text" placeholder="Search..." id="search-input">
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      
+      <div class="row" id="Local">
+        <div class="col-12">
+          <img src="{{ url_for('static', filename='local-img/main.png')}}" class="img-fluid" alt="...">
+          <div class="typewriter">
+            <h1> Local Shops</h1>
+          </div>
+        </div>
+       </div>
+          <br><br>
+          
+        <div class="row" id="Anarkali Fablic">
+          <div class="col-lg-6 col-sm-12 shop">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/5.jpg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Anarkali Fablic</h5>
+              <p >
+                New variety and New Designs at reasonable prices and collection of new stuff.</p>
+                
+               <p> 
+                <a href="https://www.google.com/maps/place/Anarkali+Fabrics/@32.9300256,73.7307009,17z/data=!3m1!4b1!4m6!3m5!1s0x391f911f50ff0ac9:0x7d3f962eeb66161b!8m2!3d32.9300211!4d73.7332758!16s%2Fg%2F11b6c9_7xv?entry=ttu">
+                  <i class="bi bi-geo-alt"></i></a> Main bazar Jhelum, 49600 <br>
+                <i class="bi bi-telephone"></i> 03336678798</p>
+
+                  <a href="https://www.facebook.com/anarkalifabricsjhelum/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/anarkalifabrics_jhelum/">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+                 
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Splash">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/3.jpg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Splash </h5>
+              <p>
+                   Splash Fashion. The House Of Brands is one of the biggest fashion outlet. </p>
+
+                   <p><a href="https://www.google.com/maps/search/splash+jhelum/@29.9505815,58.3564528,5z?entry=ttu">
+                    <i class="bi bi-geo-alt"></i>
+                </a> Civil Lines, Naya Mohallah Jhelum.<br>
+
+                  <i class="bi bi-telephone"></i> (0544) 626667</p>
+
+                  <a href="https://www.facebook.com/splashfashion.pk/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/splashfashion.pk/?hl=en">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+
+                 
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 col-sm-12 shop" id="Laces Studio">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/7.jpg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5> Laces Studio   </h5>
+             
+                      <p>Sneaker Hub Since 2008. Its a choice of champions.</p>
+
+                        <p>
+                          <a href="https://www.google.com/maps/place/Laces/@32.9310823,73.7277239,17z/data=!3m1!4b1!4m6!3m5!1s0x391f90c4aac0e62d:0xcbfe74892be6902e!8m2!3d32.9310823!4d73.7303042!16s%2Fg%2F1tg_7wfh?entry=ttu" target="_blank">
+                          <i class="bi bi-geo-alt"></i></a>
+                          Shop NO-24 Opposite City police station,  Naya Mohalla Jhelum.  <br>
+                         
+                          <i class="bi bi-telephone"></i> 0300 9520920</p>
+
+                  <a href="https://www.facebook.com/laces.studioofficial/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/lacesthesneakerhouse/?hl=en">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Mughal e Azam Fabrics">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/4.jpeg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Mughal e Azam Fabrics</h5>
+              <p class="card-text">
+                  Mughal e Azam Fabrics is a unique shop with complete collection for Ladies & Gents.
+                  </p>
+                  <p>
+                    <a href="https://www.google.com/maps/place/Mughal+e+Azam+Fabrics+center/@32.930171,73.7303274,17z/data=!4m14!1m7!3m6!1s0x391f910fabcb4c8f:0xa97e3bd89aa7b96e!2sMughal+e+Azam+Fabrics+center!8m2!3d32.930171!4d73.7329077!16s%2Fg%2F11fcr60181!3m5!1s0x391f910fabcb4c8f:0xa97e3bd89aa7b96e!8m2!3d32.930171!4d73.7329077!16s%2Fg%2F11fcr60181?entry=ttu">
+                      <i class="bi bi-geo-alt"></i></a>
+                  Civil Lines, Naya Mohalla Jhelum, Jhelum, Punjab 49600 <br>
+                  <i class="bi bi-telephone"></i> 0300 5433033</p>
+                  <a href="https://www.facebook.com/Meafjhelum/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/explore/locations/132852094067741/mughal-e-azam-fabrics-jhelum/">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Barray Mian Fabrics ">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/6.jpg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Barray Mian Fabrics  </h5>
+                      <p>
+                         we serve you complete Gents collection & sitch ladies /Gents Suits.
+                        </p>
+                        <p>
+                          <a href="https://www.google.com/maps/search/barre+mian+fabric/@32.173291,72.7209901,8z?entry=ttu" target="_blank">
+                            <i class="bi bi-geo-alt"></i></a>                 Main Bazaar Jhelum
+                            <br>
+                            <i class="bi bi-telephone"></i> (0544) 620571</p>
+
+                  <a href="https://www.facebook.com/p/Barray-Mian-Fabrics-100064268912122/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Anwar Cloth House & Boutique">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/2.jpeg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Anwar Cloth House & Boutique</h5>
+              <p>
+                 New variety and New Designs at reasonable prices and collection of new stuff</p>
+                
+               <p> 
+                <a href="https://www.google.com/maps/place/Anwar+Cloth+House+And+Boutique+Jhelum/@32.9261649,73.7283819,17z/data=!3m1!4b1!4m6!3m5!1s0x391f90c440ab88fb:0xbc5cf96bdf38cad8!8m2!3d32.9261649!4d73.7309622!16s%2Fg%2F11dyn_g75v?entry=ttu">
+                  <i class="bi bi-geo-alt"></i></a> Main bazar Jhelum, 49600 <br>
+                  <i class="bi bi-telephone"></i> 03336678798</p>
+
+                  <a href="https://www.facebook.com/anwarclothingcentre/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="FixPriceShop">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/8.jpg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>FixPriceShop</h5>
+              <p >
+                Are you looking for Designer or Replica? Casual or Party? We at Fix Price Shop have it all and more!
+                  </p>
+                  <p>
+                    <a href="https://www.google.com/maps/place/Fix+Price+Cloth+Shop/@32.9301294,73.7302639,17z/data=!3m1!4b1!4m6!3m5!1s0x391f914aeef84e53:0x2c07b8455423f6a2!8m2!3d32.9301294!4d73.7328442!16s%2Fg%2F11h8gjp_k6?entry=ttu">
+                      <i class="bi bi-geo-alt"></i></a>
+                  Civil Lines, Jhelum. <br>
+                  
+                  <i class="bi bi-telephone"></i> 0321 5427988</p>
+                  <a href="https://www.facebook.com/aliz.fixpriceshop/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Mona's Ally's">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/9.jpeg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Mona's Ally's</h5>
+              <p>
+                Clothing (brand)
+                  </p>
+                  <p>
+                    <a href="https://www.google.com/maps/place/Mona's+Ally's/@32.9299969,73.7307878,17z/data=!3m1!4b1!4m6!3m5!1s0x391f90c51eb06b2b:0xf2e40fd7d903fe6e!8m2!3d32.9299969!4d73.7333681!16s%2Fg%2F11g9vkq4np?entry=ttu">
+                      <i class="bi bi-geo-alt"></i></a> WPHM+X8X, Dulhan Bazar, Mistrian Mohallah.
+                   <br>
+                  <i class="bi bi-telephone"></i> 0322 5891208</p>
+                  <a href="https://www.facebook.com/p/Monas-Allys-Jhelum-100063864283457/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/monasallys_jhelum/?hl=en">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Nadeem Cloth House">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/10.jpeg')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>Nadeem Cloth House.</h5>
+              <p>
+                Its all about fashion and style. We believe in traditional with a Contemporary twist.
+                  </p>
+                  <p>
+                    <a href="https://www.google.com/maps/place/Nadeem'z+by+Nadeem+Cloth+House/@32.9286943,73.7316934,17z/data=!3m1!4b1!4m6!3m5!1s0x391f90c5a0de253d:0x9a2bc62ac8c39e4!8m2!3d32.9286943!4d73.7342737!16s%2Fg%2F11bwyx81k5?entry=ttu">
+                      <i class="bi bi-geo-alt"></i></a>
+                  Main bazar jhelum. <br>
+                  <i class="bi bi-telephone"></i> 
+                  (0544) 629100</p>
+                  <a href="https://www.facebook.com/Nadeemclothhousejhelum/">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/nadeemz.pk/?hl=en">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 shop" id="Khubis Collection">
+          <div class="shop-card" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='local-img/11.png')}}" alt="2-Image" class="img">
+            <div class="text-container">
+              <h5>KhubisCollection</h5>
+              <p>
+                Don't Stress About The Dress, We'll Dress You To Impress
+                  </p>
+                  <p>
+                    <a href="https://www.google.com/maps/place/Khubi%E2%80%99s+collection/@32.9301634,73.730285,17z/data=!3m1!4b1!4m6!3m5!1s0x391f913862cdd733:0xf53b882abebd2cb7!8m2!3d32.9301634!4d73.7328653!16s%2Fg%2F11t60ddzl1?entry=ttu">
+                      <i class="bi bi-geo-alt"></i></a>
+                  Civil Lines, Jhelum. <br>
+                
+                  <i class="bi bi-telephone"></i> 0336 5840088</p>
+                  <a href="https://www.facebook.com/p/KhubisCollection-100063958607671/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/khubiscollection/">
+                      <i class="bi bi-instagram"></i>
+                      </a>
+            </div>
+          </div>
+        </div>
+
+<footer>
+  <div class="col copy">
+    &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+</div>
+</footer>
+        </div>
+
+
+
+
+
+
+
+
+ </div>
+</body>
+<script src="{{ url_for('static', filename='boostrap/boostrap.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

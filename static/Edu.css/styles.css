@@ -1,0 +1,863 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    background:url(/static/Edu.pics/joel-filipe-RFDP7_80v5A-unsplash.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+nav{
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: green;
+  box-shadow: 0 1px 2px rgb(210, 197, 27);
+  z-index: 99;
+}
+nav .navbar{
+  height: 100%;
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  /* background: red; */
+  padding: 0 50px;
+}
+.navbar .logo a{
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .logo img {
+  height: 70px; 
+}
+
+nav .navbar .links li a:hover {
+  background-color: rgba(250, 250, 22, 0.687);
+}
+.nav-links .sidebar-logo img {
+  height: 70px; 
+}
+
+.nav-links .links li a:hover {
+  background-color: rgba(250, 250, 22, 0.687);
+}
+nav .navbar .nav-links{
+  line-height: 70px;
+  height: 100%;
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.links li:hover .sp-arrow,
+.links li:hover .edu-arrow,
+.links li:hover .other-arrow{
+  transform: rotate(180deg);
+  }
+
+nav .navbar .links li .arrow{
+  /* background: red; */
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: green;
+  box-shadow: 0 1px 2px rgba(7, 7, 7, 0.125);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .sp-sub-menu,
+nav .navbar .links li:hover .edu-sub-menu,
+nav .navbar .links li:hover .other-sub-menu{
+  display: block;
+}
+.navbar .links li .sub-menu li{
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.105);
+}
+.navbar .links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar .search-box{
+  position: relative;
+   height: 40px;
+  width: 40px;
+}
+.navbar .search-box i{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .search-box .input-box{
+  position: absolute;
+  right: calc(100% - 40px);
+  top: 80px;
+  height: 60px;
+  width: 300px;
+  background: green;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.navbar.showInput .search-box .input-box{
+  top: 65px;
+  opacity: 1;
+  pointer-events: auto;
+  background: green;
+}
+.search-box .input-box::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: green;
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+.search-box .input-box input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 280px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+}
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+@media (max-width:920px) {
+  nav .navbar{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a{
+    font-size: 27px;
+  }
+  nav .navbar .links li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a{
+    font-size: 15px;
+  }
+}
+@media (max-width:800px){
+ 
+  .navbar .bx-menu{
+    display: block;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background:  green;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(12, 12, 12, 0.105);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow{
+    line-height: 40px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+nav .navbar .links li .sub-menu{
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  display: none;
+}
+nav .navbar .links li .sub-menu li{
+  border-bottom: none;
+
+}
+
+.links li:hover .sp-arrow,
+.links li:hover .other-arrow,.edu-arrow{
+  transform: rotate(0deg);
+  }
+  
+  nav .navbar .links li:hover .sp-sub-menu,
+  nav .navbar .links li:hover .other-sub-menu,
+  nav .navbar .links li:hover .edu-sub-menu{
+    display: none;
+  }
+.navbar .nav-links.show1 .links .sp-sub-menu,
+  .navbar .nav-links.show3 .links .edu-sub-menu,
+  .navbar .nav-links.show2 .links  .other-sub-menu{
+      display: block;
+    }
+    .navbar .nav-links.show1 .links .sp-arrow,
+    .navbar .nav-links.show3 .links .edu-arrow{
+        transform: rotate(180deg);
+}
+    .navbar .nav-links.show2 .links .other-arrow{
+      transform: rotate(180deg);
+    }
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+.sub-heading {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 5px; /* Add some top margin for spacing */
+    color:green;
+  
+  }   
+.main {
+    text-align: center;
+    padding: 100px 0;
+    color: black;
+}
+
+.main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .main {
+    animation: blink 3.5s ease-in-out; /* Blink animation applied to the .main section */
+  }
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h1 {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+}
+#schools {
+    padding: 50px 0;
+}
+
+.section-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-header h2 {
+    font-size: 36px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row; /* Display cards in a row */
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 20px;
+    gap: 20px;
+}
+.card {
+    width: calc(25.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;   
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    height: 300px;
+    overflow: hidden;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-info {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.card-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card-info a {
+    display:inline-block;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.card-info a:hover {
+    background-color: red;
+}
+.learn-more-btn a{
+    text-align: center;
+
+}
+@media (max-width: 768px) {
+    .card {
+        width: 75%; /* Adjust the width as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+
+}
+.school-page {
+    background-image: url('/static/Edu.pics/ryan-shumway--n5F3fH0lIY-unsplash.jpg')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.school-details {
+    max-width: 800px;
+    margin: 0 auto;
+    color: wheat;
+    text-align: justify;
+   
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-image {
+    width: 40%;
+
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius for a stylish look */
+}
+.school-details h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: red;
+}
+.school-details p {
+    margin-bottom: 10px;
+    color: green;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.school-details .fas {
+    margin-right: 5px;
+}
+h2{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+   /* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+   
+    .school-details {
+        padding: 10px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .school-details img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* CSS for tablets and larger devices */
+@media only screen and (min-width: 601px) {
+   
+    .school-details {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .school-details img {
+        max-width: 100%;
+        height: auto;
+    }
+    #map-container {
+        margin-top: 20px;
+    }
+} 
+
+    /*College Section*/
+.button-container {
+     text-align:center;
+
+      }
+      
+      .college-btn {
+        Padding: 5px 5px;
+        margin: 10px;
+        row-gap: 5px;
+        font-size: 16px;
+        border: 2px solid white;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        
+
+      }
+      
+      .college-btn:hover {
+        background-color: red;
+        color: #fff;
+      }
+      @media screen and (max-width: 600px) {
+        .college-btn {
+            width: 25%; /* Set width to 100% for smaller screens */
+        }
+    }
+/* Overall layout styles */
+.college-details {
+    padding: 20px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: justify;
+}
+.college-page  {
+    background-image: url('/static/Edu.pics/henry-co-FR-gSOEDCG8-unsplash.jpg')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.college-details p{
+    color: black;
+}
+.logo-about-container {
+    display: flex;
+    gap: 20px;
+}
+.college-logo img {
+    width: 200px;
+    margin-top: 2%;
+}
+.about-content {
+    padding: 20px;
+}
+.college-image img {
+    width: 400px; /* Make the image width 100% of its container */
+    height: 300px; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    
+}
+.contact-information {
+    color: white;
+    justify-content: left;
+}
+.map-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+/* CSS for small screens */
+@media screen and (max-width: 768px) {
+    .college-details {
+        font-size: 15px; /* Decrease font size for smaller screens */
+    }
+
+    .logo-about-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .college-logo img {
+        width: 150px; /* Reduce logo size for smaller screens */
+    }
+
+    .college-image img {
+        width: 100%; /* Make the image width 100% of its container */
+    }
+
+    .map-container {
+        padding: 10px; /* Decrease padding for map container on smaller screens */
+    }
+}
+
+
+/*Universities section*/
+.University.button-container {
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+}
+.University-btn {
+    padding: 8px 8px;
+    margin: 8px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    row-gap: 2px;
+}
+.University-btn:hover {
+    background-color: red;
+    color: #fff;
+}
+.uni-sub-heading{
+    justify-content: center;
+    text-align: center; /* Center the text horizontally */
+    margin-top: 5px; /* Add some top margin for spacing */
+    font-weight: bold;
+    color: green;
+  
+  } 
+@media (max-width: 768px) {
+    .University-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+ .University-details {
+ padding: 10px;
+ color: white;
+ font-family:'Times New Roman', Times, serif;
+ font-size: 17px;
+text-align: justify;
+ }
+ .university-page {
+    background: url(/static/Edu.pics/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.University-logo-about-container {
+ display: flex;
+ gap: 10px;
+}
+.University-logo img {
+width: 200px;
+margin-top: 25%;
+
+}
+.University-details h2{
+    color: green;
+}
+.university-page h1{
+    color: green;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.University-about-content {
+ padding: 10px;
+}
+.University-details p , a{
+    color: black;
+    font-size: 20px;
+}
+.contact-information {
+    color: red;
+    justify-content: left;
+}
+.map-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+ /* Media Queries */
+@media screen and (max-width: 768px) {
+    .University-details {
+        font-size: 15px; /* Decrease font size for smaller screens */
+    }
+
+    .University-logo-about-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+    .University-logo img {
+        width: 150px; /* Reduce logo size for smaller screens */
+        margin-top: 10%; /* Adjust margin top for smaller screens */
+    }
+    .university-page h1 {
+        font-size: 20px; /* Decrease heading size for smaller screens */
+    }
+    .map-container {
+        padding: 10px; /* Decrease padding for map container on smaller screens */
+    }
+}
+    .University-image img {
+        max-width: 100%; /* Adjust image width to fill container on smaller screens */
+    }
+
+/*islamic Centers*/
+.center-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.center-container {
+    text-align: center;
+    margin: 10px;
+    width:max-content; /* Set width for three cards with margin */
+}
+
+.center {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.center-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    outline: black;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.center-btn:hover {
+    background-color: red;
+}
+@media (max-width: 768px) {
+    .center-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-container {
+        width: 50%;
+    }
+}
+.Islamic-center-details {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align:justify;
+    margin-left: 15px;
+}
+.Islamic-center-about-content {
+    max-width: 90%;
+    color: white;
+    text-align: justify;
+}
+.Islamic-center-about-content img {
+    width: 300px;
+    height: 250px;
+    margin-left: 50px; /* Adjust spacing between image and text */
+    float: right; /* Float the image to the left */
+    margin-top: 20px;
+}
+#I.Center-map-container {
+padding: 2px;
+
+}
+.Islamic-Center-page {
+    background-image: url('/static/Edu.pics/ic.jpg')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.Islamic-Center-sub-heading{
+    justify-content: center;
+    text-align: center; /* Center the text horizontally */
+    margin-top: 5px; /* Add some top margin for spacing */
+    font-weight: bold;
+    color:black;
+}
+.Islamic-center-details p {
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.Islamic-center-details h2{
+    color: green;
+    font-size: 25px;
+}
+.Islamic-center-details a{
+font-size: 18px;
+color: red;
+}
+.footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+@media screen and (max-width: 768px) {
+    .Islamic-center-details {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    .Islamic-center-about-content img {
+        margin-top: 10px; /* Adjust top margin for smaller screens */
+    }
+}

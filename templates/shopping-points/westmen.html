@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='shopping/brand.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  
+    <title>WestenMen</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12"> 
+              <nav>
+                <div class="navbar">
+                  <i class='bx bx-menu'></i>
+                  <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+                  <div class="nav-links">
+                    <div class="sidebar-logo">
+                      <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                      <i class='bx bx-x' ></i>
+                    </div>
+                    <ul class="links">
+                      <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+                      <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                      <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                      <li>
+                        <a href="#">ShoppingPoints</a>
+                        <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                        <ul class="sp-sub-menu sub-menu">
+                          <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                          <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                          <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                          
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                        <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                        <ul class="edu-sub-menu sub-menu">
+                          <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                          <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                          <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                          <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Others</a>
+                        <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                        <ul class="other-sub-menu sub-menu">
+                          <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                          <li><a href="{{ url_for('service') }}">Services</a></li>
+                          <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                          <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                        </ul>
+                      </li>
+                      
+            
+                    </ul>
+                  </div>
+                  <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                      <input type="text" placeholder="Search..." id="search-input">
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-12">
+          <img src="{{ url_for('static', filename='brand-img/1.jpg')}}" class="img-fluid" alt="...">
+          <div class="typewriter">
+            <h1> Colors of life </h1>
+          </div>
+        </div>
+      </div>
+    
+    
+    <center><div class="row id=gallery">
+        
+            <div class="col-6 Categories">
+                <figure class="figure"><img src="{{ url_for('static', filename='brand-img/9.png')}}" class="WestenMen" alt="img_2"><figcaption class="figure-caption text-center">
+                    <a href="westmen.html"><h4>Westen Men</h4></a>
+                  </figcaption></figure>
+            </div>
+        </div></center>
+
+
+        
+
+<!--outffiter-->
+
+<div class="row"  id="outffiter">
+    <div class="col-12 ">
+      <h1>Outfitter</h1>
+      <a href="https://www.instagram.com/outfitters_pk/"></i></a>
+      <a href="https://outfitters.com.pk/collections/seniors-frequently-buying-products?gad_source=1&gclid=CjwKCAjwtqmwBhBVEiwAL-WAYSP4gfYagOQ0_kGh5HLLhSI9_B91lVOlG_3PNa_vAsj2qBodscnZJhoC-ewQAvD_BwE">  <i class="bi bi-globe2"></i></a>
+      <a href="https://www.google.com/search?q=ethnic+jhelum&sca_esv=12ccb0fb0fe1b570&biw=1357&bih=642&tbm=lcl&ei=w5YLZuT4I4KJ9u8Pqe6bgA4&ved=0ahUKEwik5uep5aKFAxWChP0HHSn3BuAQ4dUDCAk&uact=5&oq=ethnic+jhelum&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIg1ldGhuaWMgamhlbHVtMgsQABiABBiKBRiRAjIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yCxAAGIAEGIoFGJECMgQQABgeMgQQABgeMgQQABgeMgIQJkjMFFAAWL8QcAB4AJABAJgB-gGgAZ8NqgEDMi03uAEDyAEA-AEBmAIFoALzCcICChAAGIAEGIoFGEPCAg0QABiABBiKBRhDGLEDwgIQEAAYgAQYigUYQxixAxiDAcICBxAAGIAEGA3CAggQABgIGAcYHsICCBAAGAUYHhgNmAMAkgcDMi01oAf6LQ&sclient=gws-wiz-local"><i class="bi bi-geo-alt-fill"></i> </a>
+    </div>
+    <br><br>
+  <div class="col-lg-5 col-sm-12">
+    <div class="card">
+      <img src="{{ url_for('static', filename='brand-img/o2.jpeg')}}" class="card-img-top k1" alt="ndure">
+      <div class="card-body">
+        <h5 class="card-title text-center">
+            <a href="https://outfitters.com.pk/collections/men-new-arrivals-view-all" >WestenMen</a></h5>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+<!--gul ahmed-->
+<div class="row" id="gul ahmed">
+    <div class="col-12">
+    <h1>Gul Ahmed</h1>
+    <a href="https://www.instagram.com/gulahmedfashion/"></i></a>
+    <a href="https://www.gulahmedshop.com/">  <i class="bi bi-globe2"></i></a>
+    <a href="https://www.google.com/search?q=gul+amham+jhelum&sca_esv=12ccb0fb0fe1b570&biw=1357&bih=642&tbm=lcl&ei=Kp4LZrbhDdKI9u8P362ukAw&ved=0ahUKEwi2np-x7KKFAxVShP0HHd-WC8IQ4dUDCAk&uact=5&oq=gul+amham+jhelum&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhBndWwgYW1oYW0gamhlbHVtMgcQABiABBgNMgcQABiABBgNMggQABgFGB4YDTIIEAAYCBgeGA1IwTJQ5AtY4itwAHgAkAEAmAGsAqAB9BOqAQYyLTEwLjG4AQPIAQD4AQGYAgigAt0OwgIFEAAYgATCAgYQABgHGB7CAgIQJsICCxAAGIAEGIoFGIYDwgILEAAYgAQYigUYkQLCAgoQABiABBiKBRhDwgINEAAYgAQYigUYQxixA8ICEBAAGIAEGIoFGEMYsQMYgwHCAggQABgFGAcYHpgDAIgGAZIHAzItOKAHgz8&sclient=gws-wiz-local"><i class="bi bi-geo-alt-fill"></i> </a>
+  <br><br>
+<div class="col-lg-5 col-sm-12">
+  <div class="card">
+    <img src="{{ url_for('static', filename='brand-img/g3.jpeg')}}" class="card-img-top k1" alt="ndure">
+    <div class="card-body">
+        <h5 class="card-title text-center"><a href="https://www.gulahmedshop.com/mens-clothes" >Westen Men</a></h5>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<!--Edenrobe-->
+<div class="row" id="Edenrobe">
+    <div class="col-12">
+    <h1>Edenrobe</h1>
+    <a href="https://www.instagram.com/edenrobe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+    <a href="https://edenrobe.com/">  <i class="bi bi-globe2"></i></a>
+    <a href="https://www.google.com/search?q=edenrobe+jhelum&sca_esv=12ccb0fb0fe1b570&biw=1357&bih=642&tbm=lcl&ei=cJYLZqmbBtKp9u8Pj-iXgAg&oq=ed+jhelum&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIgllZCBqaGVsdW0qAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5I2SZQ9gRYoBBwAHgAkAEAmAGRAqAB2QmqAQMyLTW4AQHIAQD4AQGYAgSgApgIwgILEAAYgAQYigUYkQLCAgUQABiABMICBBAAGB7CAgIQJsICCxAAGIAEGIoFGIYDwgIKEAAYgAQYigUYQ8ICDRAAGIAEGIoFGEMYsQPCAhAQABiABBiKBRhDGLEDGIMBmAMAiAYBkgcDMi00oAeQHg&sclient=gws-wiz-local"><i class="bi bi-geo-alt-fill"></i> </a>
+  
+  </div>
+  <br><br>
+  <div class="col-lg-5 col-sm-12">
+    <div class="card">
+      <img src="{{ url_for('static', filename='brand-img/e4.jpeg')}}" class="card-img-top k1" alt="ndure">
+      <div class="card-body">
+        <h5 class="card-title text-center"><a href="https://edenrobe.com/collections/men-tops" >Westren Men</a></h5>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  <!--Diner-->
+<div class="row" id="Diner">
+    <div class="col-12">
+    <h1>Diner</h1>
+    <a href="https://www.instagram.com/dinersofficial/"></i></a>
+    <a href="https://diners.com.pk/">  <i class="bi bi-globe2"></i></a>
+    <a href="https://www.google.com/search?q=diners+jhelum&sca_esv=12ccb0fb0fe1b570&biw=1357&bih=642&tbm=lcl&ei=mawLZrqmOq2P9u8Pk6OgoAQ&oq=diner+jhelum&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIgxkaW5lciBqaGVsdW0qAggAMgsQABiABBiKBRiRAjILEAAYgAQYigUYkQIyBxAAGIAEGAoyBhAAGB4YCjICECYyCxAAGIAEGIoFGIYDSLMaUOwEWJAHcAB4AJABAJgBiwKgAb4FqgEDMi0zuAEByAEA-AEBmAIDoALOBcICBxAAGIAEGA3CAgYQABgeGA3CAggQABgeGA0YD5gDAIgGAZIHAzItM6AHqhA&sclient=gws-wiz-local#rlfi=hd:;si:;mv:[[32.9351603,73.73539029999999],[32.9047992,73.731309]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10"><i class="bi bi-geo-alt-fill"></i> </a>
+  
+  </div>
+  <br><br>
+  <div class="col-lg-5 col-sm-12">
+    <div class="card">
+      <img src="{{ url_for('static', filename='brand-img/d1.jpeg')}}" class="card-img-top k1" alt="ndure">
+      <div class="card-body">
+        <h5 class="card-title text-center"><a href="https://diners.com.pk/collections/diners-shirt" >Westen Men</a></h5>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<!--STONE harbor-->
+
+<div class="row" id="STONE harbor">
+    <div class="col-12 ">
+      <h1>Stone Harbor</h1>
+      <a href="https://www.instagram.com/stone_harbor1976/"></i></a>
+      <a href="https://www.stoneharbor.com.pk/">  <i class="bi bi-globe2"></i></a>
+      <a href="https://www.google.com/search?q=stone+horbor+jhelum&sca_esv=12ccb0fb0fe1b570&biw=1357&bih=642&tbm=lcl&ei=pKwLZt_FObKK9u8PycyBiAM&ved=0ahUKEwjfp9-Y-qKFAxUyhf0HHUlmADEQ4dUDCAk&uact=5&oq=stone+horbor+jhelum&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhNzdG9uZSBob3Jib3IgamhlbHVtMgcQABiABBgNSPApUABYqSZwAHgAkAEAmAGbAqAB6xeqAQQyLTEzuAEDyAEA-AEBmAIMoAK0FsICChAAGIAEGIoFGEPCAgsQABiABBiKBRiRAsICDRAAGIAEGIoFGEMYsQPCAhAQABiABBiKBRhDGLEDGIMBwgIGEAAYBxgewgICECbCAggQABgHGB4YD8ICCxAAGIAEGIoFGIYDwgIGEAAYHhgPwgIIEAAYgAQYogSYAwCSBwQyLTEyoAe8Lw&sclient=gws-wiz-local"><i class="bi bi-geo-alt-fill"></i> </a>
+    
+    </div>
+    <br><br>
+    <div class="col-lg-5 col-sm-12">
+        <div class="card">
+          <img src="{{ url_for('static', filename='brand-img/sh1.jpeg')}}" class="card-img-top k1" alt="ndure">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+                <a href="https://www.stoneharbor.com.pk/collections/girls" >Westen Men</a></h5>
+          </div>
+        </div>
+      </div>
+        </div>
+    
+  
+
+
+  <br><br>
+  <footer>
+    <div class="col copy">
+      &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+  </div>
+  </footer>
+
+
+
+
+
+        </div>
+</body>
+<script src="{{ url_for('static', filename='boostrap/boostrap.js') }}"></script>
+<script src="{{ url_for('static', filename='shopping/brand.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+</html>

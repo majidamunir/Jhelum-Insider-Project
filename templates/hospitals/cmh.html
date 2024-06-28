@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Military Hospital</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hospitals-css/cmh.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 "><img src="{{ url_for('static', filename='hospital-img/cmh.png')}}" class="dhq" alt=""> &nbsp;&nbsp;
+              <h1 class="h1-dhq">Combined Military Hospital</h1>
+            </div>
+
+            <div class="col-lg-3 col-sm-12">
+                <br>
+                
+                <h6><i class="bi bi-telephone text-sucess"></i>  (0544) 620686
+                    </h6> 
+                    
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <nav>
+              <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+                <div class="nav-links">
+                  <div class="sidebar-logo">
+                    <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                    <i class='bx bx-x' ></i>
+                  </div>
+                  <ul class="links">
+                    <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+                    <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                    <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                    <li>
+                      <a href="#">ShoppingPoints</a>
+                      <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                      <ul class="sp-sub-menu sub-menu">
+                        <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                        <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                        <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                      <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                      <ul class="edu-sub-menu sub-menu">
+                        <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                        <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                        <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                        <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Others</a>
+                      <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                      <ul class="other-sub-menu sub-menu">
+                        <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                        <li><a href="{{ url_for('service') }}">Services</a></li>
+                        <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                        <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                      </ul>
+                    </li>
+                    
+          
+                  </ul>
+                </div>
+                <div class="search-box">
+                  <i class='bx bx-search'></i>
+                  <div class="input-box">
+                    <input type="text" placeholder="Search..." id="search-input">
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+      </div>
+  
+        
+          <div class="row">
+            <div class="col">
+              <div class="card text-bg-dark " data-aos="fade-right">
+                <img src="{{ url_for('static', filename='hospital-img/1.png')}}" class="card-img " alt="dhq1">
+                <div class="typewriter">
+                  <h1> SERVING WITH PRIDE  </h1>
+                </div>
+                <div class="card-img-overlay">
+                  
+                  <h1 class="card-title "></h1>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+<br>
+<div class="row"><div class="col"data-aos="fade-up">
+
+<p id="about">C.M.H. - The Combined Military Hospital (CMH) located in Jhelum is a distinguished healthcare establishment celebrated for its provision of superior treatment and recuperative services. Its scope extends beyond military personnel, encompassing their families and the wider public, positioning CMH as a frontrunner in specialized medical attention. Backed by cutting-edge technology and a team of doctors, CMH Jhelum, is unwavering in its dedication to providing optimal healthcare to its valued patients.
+
+</p>
+
+</div></div>
+<br>
+<h1 id="Serivices">Medical Services</h1>
+<br>
+<div class="row">
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card service-cards" data-aos="fade-up">
+    <img src="{{ url_for('static', filename='hospital-img/ct.png')}}" class="card-img-top icon" alt="icon">
+    <div class="card-body">
+      
+     <h5 class="card-title">CT Scan</h5></a>
+    </div>
+  </div> 
+  </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card service-cards" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='hospital-img/skin.png')}}" class="card-img-top icon" alt="icon">
+        <div class="card-body">
+          
+         <h5 class="card-title">Dermatology</h5>
+        </div>
+      </div>
+      </div>
+    
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card service-cards" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='hospital-img/cardic.png')}}" class="card-img-top icon" alt="icon">
+            <div class="card-body">
+              
+             <h5 class="card-title">Cardiology</h5>
+            </div>
+          </div>
+          </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card service-cards" data-aos="fade-up">
+                <br>
+                <img src="{{ url_for('static', filename='hospital-img/Gynaecology.png')}}" class="card-img-top icon" alt="icon">
+                <div class="card-body">
+                  
+                 <h5 class="card-title">Gynaecology</h5>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card service-cards" data-aos="fade-up">
+                  <img src="{{ url_for('static', filename='hospital-img/Urology.png')}}" class="card-img-top icon" alt="icon">
+                  <div class="card-body">
+                    
+                   <h5 class="card-title">Urology</h5>
+                  </div>
+                </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card service-cards"data-aos="fade-up" >
+                      <img src="{{ url_for('static', filename='hospital-img/Paediatrics.png')}}" class="card-img-top icon" alt="icon">
+                      <div class="card-body">
+                        
+                       <h5 class="card-title">Paediatrics</h5>
+                      </div>
+                    </div>
+                    </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="card service-cards" data-aos="fade-up">
+                    <img src="{{ url_for('static', filename='hospital-img/Orthopaedics.png')}}" class="card-img-top icon" alt="icon">
+                    <div class="card-body">
+                      
+                     <h5 class="card-title">Orthopaedics</h5>
+                    </div>
+                  </div>
+                  </div>
+
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card service-cards" data-aos="fade-up">
+    <img src="{{ url_for('static', filename='hospital-img/Radiology.png')}}" class="card-img-top icon" alt="icon">
+    <div class="card-body">
+      
+      <h5 class="card-title">Radiology</h5>
+    </div>
+  </div> 
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card service-cards" data-aos="fade-up">
+      <img src="{{ url_for('static', filename='hospital-img/surgery.png')}}" class="card-img-top icon" alt="icon">
+      <div class="card-body">
+        
+        <h5 class="card-title">Surgery</h5>
+      </div>
+    </div> 
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" >
+      <div class="card service-cards" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='hospital-img/Trauma-Center.png')}}" class="card-img-top icon" alt="icon">
+        <div class="card-body">
+          
+          <h5 class="card-title">Trauma</h5>
+        </div>
+      </div> 
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card service-cards"data-aos="fade-up" >
+          <img src="{{ url_for('static', filename='hospital-img/ent.png')}}" class="card-img-top icon" alt="icon">
+          <div class="card-body">
+            
+            <h5 class="card-title">ENT</h5>
+          </div>
+        </div>
+        </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card service-cards" data-aos="fade-up">
+          <img src="{{ url_for('static', filename='hospital-img/emergancy.png')}}" class="card-img-top icon" alt="icon">
+          <div class="card-body">
+            
+            <h5 class="card-title">Emergency</h5>
+          </div>
+        </div> 
+        </div>
+
+</div>
+<br>
+<div class="row">
+
+  <h1 id="Contact">Contact</h1>
+  
+  <div class="col-12">
+    <br><br> <br>
+    <h4><i class="bi bi-geo-alt"></i>WM8X+G7Q, Pind Dadan Khan - Jhelum Rd, Jhelum Cantt, Punjab</h4>
+  </div>
+  <div class="col-12">
+    <h4><i class="bi bi-telephone-fill"></i> 	(0544) 620686</h4>
+  </div>
+  
+  
+ <center> <div class="col-12" id="map" data-aos="fade-up"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13397.250998360278!2d73.6982292!3d32.9163343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f905fd6c89dd9%3A0xb1ebb35a869accd!2sCombined%20Military%20Hospital%20Jhelum!5e0!3m2!1sen!2s!4v1711970661873!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></center>
+</div>
+
+
+
+
+
+<footer>
+  <div class="col copy">
+    &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+</div>
+</footer>
+
+    </div>
+</body>
+<script src="../boostrap/boostrap.js"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

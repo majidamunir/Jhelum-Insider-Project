@@ -1,0 +1,115 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.background-container {
+    background: url(images.2/meadow-5605859_1280.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.container {
+    background: transparent;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Adjust container width as needed */
+    width: 100%;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 75px;
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-group input[type="email"],
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 40px); /* Adjust input width to accommodate icon */
+    padding: 20px;
+    border: none;
+    border-bottom: rgb(from color r g b);
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input-group input[type="email"]::placeholder,
+.input-group input[type="text"]::placeholder,
+.input-group input[type="password"]::placeholder 
+{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: white;
+}
+/* CSS for Forgot Password link */
+.forgot-password {
+    margin-top: 10px; /* Adjust as needed */
+    text-align: center;
+}
+
+.forgot-password a {
+    font-size: 18px; 
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.forgot-password a:hover {
+    text-decoration:wavy; /* Add underline on hover */
+}
+/* Button Styles */
+button {
+    width: 40%;
+    padding: 15px;
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline; /* Ensure button takes full width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}

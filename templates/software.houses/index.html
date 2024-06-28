@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Houses</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='SH.styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-lGBxjQ5UTzZ3lwUV/QJ/A5qLRo2cpP9Z2zjvNycLurEe4JrvmUuhsoIQkx6x6Atxb/TrV2dJeK2e8OmtS+BXUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="{{ url_for('home_page') }}">Home</a></li>
+              <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+              <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+              <li>
+                <a href="#">ShoppingPoints</a>
+                <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                <ul class="sp-sub-menu sub-menu">
+                  <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                  <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                  <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                <ul class="edu-sub-menu sub-menu">
+                  <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                  <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                  <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                  <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Others</a>
+                <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                <ul class="other-sub-menu sub-menu">
+                  <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                  <li><a href="{{ url_for('service') }}">Services</a></li>
+                  <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                  <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                </ul>
+              </li>
+              
+    
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." id="search-input">
+            </div>
+          </div>
+        </div>
+      </nav>
+        <h2 class="sub-heading">SOFTWARE HOUSES IN JHELUM</h2>
+
+    <main>
+        
+        <div class="button-container">
+            <button class="S.House-btn" onclick="window.location.href='TeqHolic'">TeqHolic Software House</button>
+            <button class="S.House-btn" onclick="window.location.href='Rev9'">Rev 9 Solutions</button>
+            <button class="S.House-btn" onclick="window.location.href='Jinnahsoft'">JinnahSoft</button>
+            <button class="S.House-btn" onclick="window.location.href='Leaflight_Studios'">Leaflight
+                Studios</button>
+            <button class="S.House-btn" onclick="window.location.href='NextPakAgile'">Next Pak Agile</button>
+            <button class="S.House-btn" onclick="window.location.href='PerfectWebSolutions'">Perfect Web
+                Solutions</button>
+            <button class="S.House-btn" onclick="window.location.href='ITSolutionNetwork'">IT Solution
+                Network</button>
+            <button class="S.House-btn" onclick="window.location.href='Pre_PostTech'">Pre-Post Tech</button>
+            <button class="S.House-btn" onclick="window.location.href='BVoirTechnologies'">bVoir
+                Technologies</button>
+            <button class="S.House-btn" onclick="window.location.href='AcuitySoftwares'">Acuity Softwares</button>
+            <button class="S.House-btn" onclick="window.location.href='NewITSystems'">New IT Systems </button>
+            <button class="S.House-btn" onclick="window.location.href='CompetentComputers'">Competent Computers
+            </button>
+            <button class="S.House-btn" onclick="window.location.href='WarisSoftwareHouse'">Waris Software House
+            </button>
+        </div>
+
+    </main>
+    
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

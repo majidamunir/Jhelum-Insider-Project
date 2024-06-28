@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHD</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',  filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hospitals-css/afzal.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container-fluid">
+       
+
+        <div class="row">
+            <div class="col">
+              <nav>
+                <div class="navbar">
+                  <i class='bx bx-menu'></i>
+                  <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+                  <div class="nav-links">
+                    <div class="sidebar-logo">
+                      <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                      <i class='bx bx-x' ></i>
+                    </div>
+                    <ul class="links">
+                      <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+                      <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                      <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                      <li>
+                        <a href="#">ShoppingPoints</a>
+                        <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                        <ul class="sp-sub-menu sub-menu">
+                          <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                          <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                          <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                          
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                        <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                        <ul class="edu-sub-menu sub-menu">
+                          <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                          <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                          <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                          <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Others</a>
+                        <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                        <ul class="other-sub-menu sub-menu">
+                          <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                          <li><a href="{{ url_for('service') }}">Services</a></li>
+                          <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                          <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                        </ul>
+                      </li>
+                      
+            
+                    </ul>
+                  </div>
+                  <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                      <input type="text" placeholder="Search..." id="search-input">
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+        </div>
+    
+          
+            <div class="row">
+              <div class="col">
+                <div class="card text-bg-dark " data-aos="fade-right">
+                  <img src="{{ url_for('static', filename='hospital-img/1.png')}}" class="card-img " alt="dhq1">
+                  <div class="typewriter">
+                    <h1>SERVING WITH PRIDE</h1>
+                  </div>
+                  <div class="card-img-overlay">
+                    
+                    <h1 class="card-title "></h1>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 "><img src="{{ url_for('static', filename='hospital-img/ahd.png')}}" class="afzal" alt=""> &nbsp;&nbsp;
+                <a href="https://afzalhospital.com.pk/service/"></a><h1 class="h1-afzal">Afzal Hospital Jhelum</h1>
+              </div>
+  
+              <div class="col-lg-6 col-sm-12">
+                  <br>
+                  
+                  <h6><i class="bi bi-telephone text-sucess"></i>  +92 544 624646
+  
+                      &nbsp;&nbsp;</h6> 
+                      <h6><i class="bi bi-envelope"></i> 	Info@afzalhospital.com.pk</h6>
+              </div>
+          </div>   
+
+<div class="row"><div class="col" data-aos="fade-up">
+
+<p id="about">Afzal Hospital & Dental Clinic is a State of the Art 40 bedded multi-specialty hospital. It is strategically located at a prime location in Machine Mohalla No 3, Jhelum, Pakistan. The hospital comprises of modern operation theaters, Intensive Care, Labor and Delivery Rooms. Highly qualified and experienced team of Consultants, Doctors, Nurses, Paramedical Staff and other Professionals run various departments of the hospital and ensure provision of quality medical services to the Patients. The hospital is equipped with advanced technology and sophisticated equipment to provide world class health care.
+</p>
+
+</div></div>
+<br>
+<h1 id="Serivices">Medical Services</h1></a>
+<br>
+<div class="row">
+  
+  <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card service-cards" data-aos="fade-up">
+    <img src="{{ url_for('static', filename='hospital-img/ct.png')}}" class="card-img-top icon" alt="icon">
+    <div class="card-body">
+      
+     <a href="https://afzalhospital.com.pk/blog/q-service/x-ray-and-ultrasound-facilities/"> <h5 class="card-title">CT Scan</h5></a>
+    </div>
+  </div> 
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card service-cards" data-aos="fade-up">
+      <img src="{{ url_for('static', filename='hospital-img/dental.png')}}" class="card-img-top icon" alt="icon">
+      <div class="card-body">
+        
+       <a href="https://afzalhospital.com.pk/blog/q-service/dental-clinic/"> <h5 class="card-title">Dental</h5></a>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card service-cards" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='hospital-img/skin.png')}}" class="card-img-top icon" alt="icon">
+        <div class="card-body">
+          
+         <a href="https://afzalhospital.com.pk/blog/q-service/dermatology-aesthetics/"> <h5 class="card-title">Dermatology</h5></a>
+        </div>
+      </div>
+      </div>
+    
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card service-cards" data-aos="fade-up">
+          <img src="{{ url_for('static', filename='hospital-img/lab.png')}}" class="card-img-top icon" alt="icon">
+          <div class="card-body">
+            
+           <a href="https://afzalhospital.com.pk/blog/q-service/laboratory-and-diagnostic-procedure/"> <h5 class="card-title">Laboratory </h5></a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card service-cards" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='hospital-img/Paediatrics.png')}}" class="card-img-top icon" alt="icon">
+            <div class="card-body">
+              
+             <a href="https://afzalhospital.com.pk/blog/q-service/paediatrics/"> <h5 class="card-title">Paediatrics</h5></a>
+            </div>
+          </div>
+          </div>
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card service-cards" data-aos="fade-up">
+                <br>
+                <img src="{{ url_for('static', filename='hospital-img/Gynaecology.png')}}" class="card-img-top icon" alt="icon">
+                <div class="card-body">
+                  
+                 <a href="https://afzalhospital.com.pk/blog/q-service/gynaecology-obstetrics/"> <h5 class="card-title">Gynaecology</h5></a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card service-cards" data-aos="fade-up">
+                  <img src="{{ url_for('static', filename='hospital-img/Urology.png')}}" class="card-img-top icon" alt="icon">
+                  <div class="card-body">
+                    
+                   <a href="https://afzalhospital.com.pk/blog/q-service/urology/"> <h5 class="card-title">Urology</h5></a>
+                  </div>
+                </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card service-cards" data-aos="fade-up">
+                      <img src="{{ url_for('static', filename='hospital-img/Orthopaedics.png')}}" class="card-img-top icon" alt="icon">
+                      <div class="card-body">
+                        
+                       <a href="https://afzalhospital.com.pk/blog/q-service/orthopaedics/"> <h5 class="card-title">Orthopaedics</h5></a>
+                      </div>
+                    </div>
+                    </div>
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card service-cards" data-aos="fade-up">
+    <img src="{{ url_for('static', filename='hospital-img/Radiology.png')}}" class="card-img-top icon" alt="icon">
+    <div class="card-body">
+      
+     <a href="https://afzalhospital.com.pk/blog/q-service/x-ray-and-ultrasound-facilities/"> <h5 class="card-title">Radiology</h5></a>
+    </div>
+  </div> 
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card service-cards" data-aos="fade-up">
+      <img src="{{ url_for('static', filename='hospital-img/surgery.png')}}" class="card-img-top icon" alt="icon">
+      <div class="card-body">
+        
+       <a href="https://afzalhospital.com.pk/blog/q-service/general-surgery/"> <h5 class="card-title">Surgery</h5></a>
+      </div>
+    </div> 
+    </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card service-cards" data-aos="fade-up">
+          <img src="{{ url_for('static', filename='hospital-img/emergancy.png')}}" class="card-img-top icon" alt="icon">
+          <div class="card-body">
+            
+           <a href="https://afzalhospital.com.pk/blog/q-service/emergency-service/"> <h5 class="card-title">Emergency</h5></a>
+          </div>
+        </div> 
+        </div>
+
+</div>
+<br>
+<div class="row">
+
+  <h1 id="Contact">Contact</h1>
+  
+  <div class="col-12">
+    <br><br> <br>
+    <h4><i class="bi bi-geo-alt"></i> Old GT Rd, Machine Mohalla 3, Jhelum, Punjab 49600, Pakistan</h4>
+  </div>
+  <div class="col-12">
+    <h4><i class="bi bi-telephone-fill"></i> 	+92 544 624646</h4>
+  </div>
+  <div class="col-12">
+    <h4><a href="https://www.facebook.com/AfzalHospitalJhelum/">
+      <i class="bi bi-facebook"></i></a>
+<a href="mailto:Info@afzalhospital.com.pk">
+      <i class="bi bi-envelope-fill"></i></a></h4>
+  </div>
+ <center> <div class="col-12" id="map" data-aos="fade-up" ><iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d13393.455381649754!2d73.719952!3d32.941402!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU2JzI5LjEiTiA3M8KwNDMnMTEuOCJF!5e0!3m2!1sen!2sus!4v1711884366638!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></center>
+</div>
+
+
+
+
+
+
+<footer>
+  <div class="col copy">
+    &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+</div>
+</footer>
+    </div>
+</body>
+<script src="../boostrap/boostrap.js"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

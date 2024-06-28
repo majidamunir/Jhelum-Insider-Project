@@ -1,0 +1,204 @@
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical And Famous Places </title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- External CSS file -->
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='historical.css') }}">
+
+  <!-- JavaScript -->
+  <script lang="javascript">
+    function changePic(imgsrc) {
+      document.getElementById("pic").src = imgsrc;
+    }
+  </script>
+</head>
+ <body bgcolor=""" onclick="changePic(imgsrc)">
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="{{ url_for('home_page') }}">Home</a></li>
+          <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+          <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+          <li>
+            <a href="#">ShoppingPoints</a>
+            <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+            <ul class="sp-sub-menu sub-menu">
+              <li><a href="{{ url_for('brand') }}">Brands</a></li>
+              <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+              <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+            <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+            <ul class="edu-sub-menu sub-menu">
+              <li><a href="{{ url_for('edu') }}">Schools</a></li>
+              <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+              <li><a href="{{ url_for('edu') }}">Universities</a></li>
+              <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Others</a>
+            <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+            <ul class="other-sub-menu sub-menu">
+              <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+              <li><a href="{{ url_for('service') }}">Services</a></li>
+              <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+              <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+            </ul>
+          </li>
+          
+
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+ <!-- Image table -->
+ 
+
+<div class="image-container">
+  <img src="{{ url_for('static', filename='hp1.jpg') }}" id="pic" width="100%" border="2">
+</div>
+
+<div class="thumbnail-images">
+  <!-- Thumbnail images with onclick event -->
+  <img src="{{ url_for('static', filename='hp1.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp1.jpg') }}')"> 
+  <img src="{{ url_for('static', filename='hp2.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp2.jpg') }}')">
+  <img src="{{ url_for('static', filename='hp5.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp5.jpg') }}')">
+  <img src="{{ url_for('static', filename='hp4.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp4.jpg') }}')">
+  <img src="{{ url_for('static', filename='hp3.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp3.jpg') }}')">
+  <img src="{{ url_for('static', filename='hp6.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp6.jpg') }}')">
+  <img src="{{ url_for('static', filename='hp7.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp7.jpg') }}')">
+  <img src="{{ url_for('static', filename='hp8.jpg') }}" height="100" width="133" border="2" onclick="changePic('{{ url_for('static', filename='hp8.jpg') }}')">
+</div>
+
+  <br>
+ <h3>
+ </h3>
+ <h3>
+  <div> 
+    <div class="container" >
+     
+        <img src="{{ url_for('static', filename='tjhelum.jpg') }}" height="325" border="2" width="315" style="float: left; margin-right: 30px; margin-bottom: 1px;">
+
+   
+    
+      <div class="hh1"style="padding: 35px;" "> <h3 class="p11"> Rohtas Fort</h3>
+             An outstanding example of early Muslim military architecture in Central and South Asia is Rohtas Fort, which 
+             was constructed in the 16th century in a strategically important location in Punjab, north of Pakistan. The fort, which combined artistic and architectural elements from other Islamic countries, had a significant impact on the evolution of Mughal Empire architecture. By fusing the artistic and architectural traditions of Turkey with the Indian subcontinent, Rohtas Fort served as the inspiration for Mughal architecture and all of its later modifications and enhancements. <br> 
+             &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Rohtas_Fort"> <strong> TO Explore More  </strong></a> </button>
+       </div>
+       
+  </div>
+</h3>
+
+<h3>
+  <div>
+    <div class="container">
+      
+      <img src="{{ url_for('static', filename='hp2.jpg') }}" height="335" width="315" border="2" style="float: right; margin-left: 30px;  margin-bottom: 1px; margin-right: px;">
+
+      <div class="hh1" style="padding: 30px;">   <h3 class="p11"> Khewra Salt Mines </h3>   
+        Khewra, an administrative division of Jhelum District in Punjab, Pakistan, is home to the Khewra Salt Mines. It is situated north of Pind Dadan Khan. The Khewra Salt Mines are the oldest in the subcontinent's history of salt mining and are located at the base of the Salt Range. The second largest salt mines in the world are located near Khewra. A year, they produce 325,000 tonnes of salt. Its lifetime output is projected to be 220 million tonnes.<br> The mine has eleven levels and a depth of 748 feet. It is full of tunnels that extend over half a mile into the mountain. Just half of what is mined is extracted; the other half is needed to sustain the massive mine's columns.<br>
+       <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Khewra_Salt_Mine"> <strong> To Explore More </strong></a> </button></div>
+      </div>
+  </div>
+</h3>
+<h3>
+  <div>
+      <div class="container">
+      
+        <img src="{{ url_for('static', filename='hp5.jpg') }}" height="322" width="315" border="2"  style="float: left; margin-right: 30px; margin-bottom: 1px;">
+      <div class="hh1" style="padding: 34px;">  <h3 class="p11"> Nandana Fort  </h3>
+        The Nandana Fort is a historical site located near Jhelum, Pakistan. It's perched atop a hill in the Salt Range and is known for its ancient origins, dating back to the 11th century. The fort has a rich history, having been associated with various rulers and dynasties over the centuries, including the Ghaznavids and the Gakhars.
+        
+        Legend has it that the famous poet-philosopher, Al-Beruni, conducted some of his astronomical observations from this fort in the 11th century. The location offers stunning views of the surrounding landscape and serves as a testament to the architectural prowess of the time. <br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Nandana_Fort"> <strong> To Explore More </strong></a> </button></div>
+       </div>
+  
+  </div>
+</h3>
+
+<h3>
+  <div>
+    <div class="container">
+      
+      <img src="{{ url_for('static', filename='hp4.jpg') }}" height="300"  width="320" border="2" style="float: right; margin-right: 0px; margin-left: 30px ;  margin-bottom: 2px;">
+    
+   
+      <div class="hh1"style="padding: 30px; " > <h3 class="p11"> Mangla Dam</h3>  Mangla Dam, embankment dam on the Jhelum River near Jhelum, Pakistan. Mangla Dam, completed in 1967, is one of the main structures in the Indus Basin Project. It is the sixth largest dam in the world. In 2009, the dam height was raised from 30 ft. to 482 ft. (147 m), thereby raising the maximum water conservation level from 1,202 ft. to 1,242 ft. This increased the dam's storage capacity from 5.56 to 9.12 billion m3 (4.51 to 7.39 million-acre ft.).<br> 
+       <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Mangla_Dam"> <strong> To Explore More </strong></a> </button></div>
+       </div>
+  
+  </div>
+</h3>
+
+<h3>
+  <div>
+    <div class="container">
+      
+      <img src="{{ url_for('static', filename='hp3.jpg') }}" height="300" width="315" border="2" style="float: left; margin-right: 30px; margin-bottom: 2px;">
+      <div class="hh1"  style="padding: 35px; ">    <h3 class="p11"> Jhelum Bridge </h3> 
+         The Jhelum Bridge is situated between Jhelum and Sarai Alamgir on Jhelum River, Punjab. This bridge was built in 1878 by the British engineer. It is composed of iron trusses over many concrete piers. It has single railway track and a road on one side of the track. This bridge is still used by railway and road traffic. It is the longest railway bridge of Pakistan, spanning across length of 2.6 miles (4.225 km).<br> 
+        <br> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Jhelum_Bridge"> <strong> To Explore More </strong></a> </button></div>
+       </div>
+  
+  </div>
+</h3>
+
+<h3>
+    <div class="container">
+        <img src="{{ url_for('static', filename='hp6.jpg') }}" height="390" width="315" border="2"  style="float: right; margin-right: 1px;  margin-left: 30px;">
+        <div class="hh1" style="padding: 35px;">
+            <h3 class="p11">Tilla Jogian</h3>
+            The Tilla Jogian complex is located on Pakistan's Potohar plateau, approximately 25 km west of the cities of Jhelum and Dina. Before Pakistan was made, the abandoned monastic complex at Tilla Jogian was a place where both Hindus and Sikhs went to pray. This historical site is about 25 kilometers from the city of Jhelum. It was built in the 1st century BC. <br>Tilla Jogian is an old place that has been a holy place for the Hindu religion for the past two thousand years. After 1947, it is no longer used because the subcontinent was partitioned into two countries at that time. In the first century B.C., construction began on a large complex that includes a number of ancient temples as well as other monastery buildings. It is located 26 kilometers to the west of the Jhelum city proper.<br>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Tilla_Jogian"> <strong> To Explore More</strong></a> </button>
+         </div>
+    </div>
+    </h3>
+    
+    <h3>
+    <div class="container">
+        <img src="{{ url_for('static', filename='hp7.jpg') }}" height="373" width="315" border="2" style="float: left; margin-right: 30px; margin-bottom: 2px;">
+        <div class="hh1" style="padding: 28px;">
+            <h3 class="p11">Rasul Barrage</h3>
+            Rasul Barrage is a barrage on the River Jehlum between Jhelum District and Mandi Bahauddin District of the Punjab province of Pakistan. The Rasul Barrage is used to control the flow of water in the River Jhelum so that it can be used for irrigation and to stop floods. Rasul Barrage can let out 24070 cubic meters of water per second.<br> From this point, water is sent through the Rasul-Qadirabad link canal to the Chenab River at Qadirabad. From there, it is sent to the Sulemanki Barrage on the Sutlej River. After the Chashma-Jhelum link canal, the Rasul-Qadirabad link canal can let out the second most water. It can let water out at a rate of 538 m3/s, while the Chashma-Jhelum link canal can let water out at a rate of 615 m3/s.<br> You can bring your family to this great place to enjoy a picnic and local foods here. <br>
+            <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Rasul_Barrage"> <strong> To Explore More </strong></a> </button>
+        </div>
+    </div>
+    </h3>
+    
+    <h3>
+    <div class="container">
+        <img src="{{ url_for('static', filename='hp8.jpg') }}" height="334" width="315" border="2" style="float: right; margin-right: 0px; margin-left: 30px; margin-bottom: 0px;">
+        <div class="hh1" style="padding: 30px;"><h3 class="p11">CMH Mosque</h3>
+            CMH Mosque Jhelum or Divisional Headquarters Mosque is a Jamia Mosque in Jhelum City, Punjab Province, Pakistan. The CMH (Combined Military Hospitals) Mosque is a spectacular white marble monument located in the Cantt region of Jhelum. It is a renowned tourist destination. It was constructed in the 1950s and has a maximum capacity of 25,000 people. The CMH Mosque is without a doubt one of the most picturesque mosques in the area; it features a tall minaret on either side of the main prayer hall as well as a row of green palm trees in the front yard.<br> 
+            <br>  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/File:CMH_Mosque.JPG"> <strong> To Explore More </strong></a> </button>
+        </div>
+    </div>
+    </h3>
+    
+    </body>
+    </html>
+    

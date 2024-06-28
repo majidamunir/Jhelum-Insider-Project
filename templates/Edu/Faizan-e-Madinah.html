@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Center Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Edu.css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-lGBxjQ5UTzZ3lwUV/QJ/A5qLRo2cpP9Z2zjvNycLurEe4JrvmUuhsoIQkx6x6Atxb/TrV2dJeK2e8OmtS+BXUw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+</head>
+<body class="Islamic-Center-page">
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+              <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+              <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+              <li>
+                <a href="#">ShoppingPoints</a>
+                <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                <ul class="sp-sub-menu sub-menu">
+                  <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                  <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                  <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                <ul class="edu-sub-menu sub-menu">
+                  <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                  <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                  <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                  <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Others</a>
+                <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                <ul class="other-sub-menu sub-menu">
+                  <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                  <li><a href="{{ url_for('service') }}">Services</a></li>
+                  <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                  <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                </ul>
+              </li>
+              
+    
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." id="search-input">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h2 class="Islamic-Center-sub-heading">FAIZAN-E-MADINAH</h2>
+    <main>
+        <section class="Islamic-center-details">
+            <div class="Islamic-center-about-content">
+    <img src="{{ url_for('static', filename='Edu.pics/Faizan.e.Madinah')}}" alt="Islamic Center Image">
+    <h2><i class="fas fa-info-circle"></i> About</h2>
+    <p><i class="fas fa-school"></i>
+        
+Faizan-e-Madinah, associated with the renowned organization Dawat-e-Islami, is a vibrant center in Jhelum dedicated to spreading the teachings of Islam and promoting a message of peace, tolerance, and spirituality. Dawat-e-Islami, founded by Maulana Muhammad Ilyas Attar Qadri, is a global Islamic movement that strives to educate people about the true essence of Islam and its principles.
+Faizan-e-Madinah in Jhelum serves as a hub for various religious and educational activities. The center offers a range of programs and services, including religious lectures, Quranic teachings, and community outreach initiatives. It acts as a platform for individuals to enhance their understanding of Islam and strengthen their connection with Allah.</p>
+          
+        <div class="Islamic.center-contact-information">
+    <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+    <p><i class="fas fa-map-marker-alt"></i> Address: WPQP+P4J, Dhoke Jumma Jhelum, Punjab 49600, Pakistan</p>
+    <p><i class="fas fa-phone"></i> Phone:0343 6595326</p>
+    <h2><i class="fas fa-globe"></i> Visit Center's Site</h2>
+    <p><i class="fas fa-external-link-alt"></i> <a href="https://www.facebook.com/FaizaneMadina.Jhelum/">Center Website</a></p>
+     </div>
+      </div>
+            <div id="I.Center-map-container">
+                <!-- Embed Google Map -->
+                <h2><i class="fas fa-map-marked-alt"></i> Google-Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26787.51238312335!2d73.69923099305483!3d32.93941595430517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90d9c5353631%3A0x20d2c9b28c455960!2sFaizaan-e-Madinah%20(Dawat-e-islami)!5e0!3m2!1sen!2s!4v1707457525738!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class=" footer">
+        &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

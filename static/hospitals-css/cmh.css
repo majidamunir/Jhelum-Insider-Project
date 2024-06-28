@@ -1,0 +1,439 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+nav{
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: green;
+  box-shadow: 0 1px 2px rgb(210, 197, 27);
+  z-index: 99;
+}
+nav .navbar{
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  /* background: red; */
+  padding: 0 50px;
+}
+.navbar .logo a{
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .logo img {
+  height: 70px; 
+}
+
+nav .navbar .links li a:hover {
+  background-color: rgba(250, 250, 22, 0.687);
+}
+.nav-links .sidebar-logo img {
+  height: 70px; 
+}
+
+.nav-links .links li a:hover {
+  background-color: rgba(250, 250, 22, 0.687);
+}
+nav .navbar .nav-links{
+  line-height: 70px;
+  height: 100%;
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.links li:hover .sp-arrow,
+.links li:hover .edu-arrow,
+.links li:hover .other-arrow{
+  transform: rotate(180deg);
+  }
+
+nav .navbar .links li .arrow{
+  /* background: red; */
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: green;
+  box-shadow: 0 1px 2px rgba(7, 7, 7, 0.125);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .sp-sub-menu,
+nav .navbar .links li:hover .edu-sub-menu,
+nav .navbar .links li:hover .other-sub-menu{
+  display: block;
+}
+.navbar .links li .sub-menu li{
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.105);
+}
+.navbar .links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar .search-box{
+  position: relative;
+   height: 40px;
+  width: 40px;
+}
+.navbar .search-box i{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .search-box .input-box{
+  position: absolute;
+  right: calc(100% - 40px);
+  top: 80px;
+  height: 60px;
+  width: 300px;
+  background: green;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.navbar.showInput .search-box .input-box{
+  top: 65px;
+  opacity: 1;
+  pointer-events: auto;
+  background: green;
+}
+.search-box .input-box::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: green;
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+.search-box .input-box input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 280px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+}
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+@media (max-width:920px) {
+  nav .navbar{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a{
+    font-size: 27px;
+  }
+  nav .navbar .links li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a{
+    font-size: 15px;
+  }
+}
+@media (max-width:800px){
+ 
+  .navbar .bx-menu{
+    display: block;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background:  green;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(12, 12, 12, 0.105);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow{
+    line-height: 40px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+nav .navbar .links li .sub-menu{
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  display: none;
+}
+nav .navbar .links li .sub-menu li{
+  border-bottom: none;
+
+}
+
+.links li:hover .sp-arrow,
+.links li:hover .other-arrow,.edu-arrow{
+  transform: rotate(0deg);
+  }
+  
+  nav .navbar .links li:hover .sp-sub-menu,
+  nav .navbar .links li:hover .other-sub-menu,
+  nav .navbar .links li:hover .edu-sub-menu{
+    display: none;
+  }
+.navbar .nav-links.show1 .links .sp-sub-menu,
+  .navbar .nav-links.show3 .links .edu-sub-menu,
+  .navbar .nav-links.show2 .links  .other-sub-menu{
+      display: block;
+    }
+    .navbar .nav-links.show1 .links .sp-arrow,
+    .navbar .nav-links.show3 .links .edu-arrow{
+        transform: rotate(180deg);
+}
+    .navbar .nav-links.show2 .links .other-arrow{
+      transform: rotate(180deg);
+    }
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+p{
+  font-weight: bold;
+}
+.h1-afzal{
+    display: inline;
+    color: green;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.afzal{
+    width: 80px;
+}
+
+/*type writter*/
+.typewriter h1 {
+  color: #ffffff;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green }
+}
+
+.typewriter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+
+h6{
+    color: green;
+    display: inline;
+text-align:right ;
+}
+p{
+  font-weight: bold;
+}
+.h1-dhq{
+    display: inline;
+    color: green;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dhq{
+    width: 80px;
+}
+/*type writter*/
+.typewriter h1 {
+  color: #ffffff;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green }
+}
+
+.typewriter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+
+h6{
+    color: green;
+    display: inline;
+text-align:right ;
+}
+/* imag card*/
+    .card{
+        border: 0;
+    
+    }
+    .card-img{
+        width:100%;
+       height:450px;
+       object-fit:cover;
+       object-position:60% 40%;
+       border-radius: 0;
+      }
+      h1 {
+        text-align:center ;
+      }
+      h2{
+text-decoration: underline;
+      }
+      h4{
+        color: green;
+      }
+      /* service cards*/
+      .icon{
+        width: 100px;
+        padding: 2%; 
+      }
+      
+      .service-cards{
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        margin: 10%;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .service-cards:hover{
+        transform: scale(1.2);
+        border-width:1px;
+        border-color: green;
+        border-style: solid;
+      }
+      a{
+        color :black;
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: underline;
+        color: green;
+      }
+
+      .copy{
+        background-color: green;
+        color: white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+      }
+       /* map*/
+       @media screen and (max-width: 768px) {
+        iframe{
+width: fit-content;
+        }
+      }
+      

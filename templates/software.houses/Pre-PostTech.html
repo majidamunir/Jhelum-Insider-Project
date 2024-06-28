@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Houses Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='SH.styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-lGBxjQ5UTzZ3lwUV/QJ/A5qLRo2cpP9Z2zjvNycLurEe4JrvmUuhsoIQkx6x6Atxb/TrV2dJeK2e8OmtS+BXUw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+              <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+              <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+              <li>
+                <a href="#">ShoppingPoints</a>
+                <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                <ul class="sp-sub-menu sub-menu">
+                  <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                  <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                  <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                <ul class="edu-sub-menu sub-menu">
+                  <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                  <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                  <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                  <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Others</a>
+                <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                <ul class="other-sub-menu sub-menu">
+                  <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                  <li><a href="{{ url_for('service') }}">Services</a></li>
+                  <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                  <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                </ul>
+              </li>
+              
+    
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." id="search-input">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h2 class="sub-heading">PRE POST TECH</h2>
+    <main>
+        <section class="S.H-details">
+            <div class="S.H-about-container">
+                <div class="S.H-about-content">
+                    <h2><i class="fas fa-info-circle"></i> About</h2>
+                    <p>PrePost Tech, headquartered in the vibrant city of Jhelum, is a dynamic and forward-thinking technology company that has been at the forefront of the digital revolution since its establishment. With a rich history dating back to our inception in [year], we have continuously evolved and adapted to meet the ever-changing needs of our clients in the fast-paced world of technology.
+
+                        At PrePost Tech, we pride ourselves on our unwavering commitment to delivering innovative and high-quality solutions to businesses and individuals alike. Our team of seasoned professionals brings together a wealth of experience and expertise in various domains, including web development, digital marketing, graphic design, and IT consulting.. 
+                        </p>
+                
+                <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Address:1st floor Jhelum heights Citi Housing, Jhelum, Punjab</p>
+                <p><i class="fas fa-phone"> </i>Phone:0544-225075</p>
+                <p><i class="fas fa-envelope"></i> Email:Info@preposttech.com</p>
+                <h2><i class="fas fa-globe"></i> Visit company's Site</h2>
+                <p><i class="fas fa-external-link-alt"></i> <a href="https://www.facebook.com/PPTJhelum/">Software House Website</a></p>
+            </div>
+            <!-- Embed Google Map -->
+            <div id="map-container">
+                <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.2953001387236!2d73.66039927476416!3d32.99598927276496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f93a5b5f5b8f9%3A0x5172d25f34359b2f!2sPre-Post%20Tech!5e0!3m2!1sen!2s!4v1707712522642!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         
+        </section>
+    </main>
+    <footer>
+        <div class=" footer">
+            &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

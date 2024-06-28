@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOWNS AND PARKS</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+  <!-- External CSS file -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='town.css') }}">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background-image: url('{{ url_for('static', filename='townback.JPG') }}');">
+
+
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="{{ url_for('home_page') }}">Home</a></li>
+          <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+          <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+          <li>
+            <a href="#">ShoppingPoints</a>
+            <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+            <ul class="sp-sub-menu sub-menu">
+              <li><a href="{{ url_for('brand') }}">Brands</a></li>
+              <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+              <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+            <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+            <ul class="edu-sub-menu sub-menu">
+              <li><a href="{{ url_for('edu') }}">Schools</a></li>
+              <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+              <li><a href="{{ url_for('edu') }}">Universities</a></li>
+              <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Others</a>
+            <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+            <ul class="other-sub-menu sub-menu">
+              <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+              <li><a href="{{ url_for('service') }}">Services</a></li>
+              <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+              <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+            </ul>
+          </li>
+          
+
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search..." id="search-input">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <h4 style="font-size: xx-large; color: yellow; text-align: center;" id="PARKS">PARKS IN JHELUM</h4>
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}'); background-size: cover; background-position: center;">
+    <div class="card">
+    <img src="{{ url_for('static', filename='t1.jpeg') }}" alt="Card Image 3">
+
+    <div class="card-content">
+      <h2>Adventura Park</h2><br>
+      <p> Address: Near KFC, Main Grand Trunk Rd, opposite PSO pump, Jhelum, 49600<br><br> Hours: All week, 2 pm-10 pm<br><br>
+        Phone: 0301-8405559<br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6698.490351033612!2d73.71921!3d32.91812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90eb4e175aed%3A0x5bc6835979c9b031!2sAdventura%20Park!5e0!3m2!1sen!2sus!4v1705744300958!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+
+  <div class="card" id="Citi Land Theme Park">
+    <img src="{{ url_for('static', filename='t4.jpeg') }}" alt="Card Image 1">
+    <div class="card-content">
+      <h2>Citi Land Theme Park</h2><br>
+      <p> Address: XMR5+PW4, Citi Housing, Jhelum, Punjab<br><br> Hours: All week, 10 am-10 pm<br><br>
+        Phone: (0544) 640410<br> <br>Location:
+   
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.455108972605!2d73.6598318!3d32.9917749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f9209492aec75%3A0x710339fa704f1995!2sCiti%20Land%20Theme%20Park!5e0!3m2!1sen!2s!4v1705746193699!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  <div class="card" id="Family park">
+    <img src="{{ url_for('static', filename='t3.jpeg') }}" alt="Card Image 2">
+    <div class="card-content">
+      <h2>Family park</h2><br>
+      <p> Address:WPRR+Q3X, Session Ct Rd, Kechehry (District Courts) District Civil Lines, Jhelum, Punjab 49600<br><br> Hours: Open 24/7 <br><br>
+        Phone: 0307-3589645<br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.3416185598944!2d73.73767187428601!3d32.94198897553939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90d641934845%3A0xb78e1b9801b92fb9!2sFamily%20park!5e0!3m2!1sen!2s!4v1705992663370!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}');background-size: cover; background-position: center;">
+  <div class="card" id="Altaf Park">
+    <img src="{{ url_for('static', filename='t2.jpeg') }}" alt="Card Image 3">
+    <div class="card-content">
+      <h2>Altaf Park</h2><br>
+      <p> Address:WPCG+MHQ, Jhelum Cantt, Jhelum, Punjab 49600, Pakistan<br><br> Hours: All week, 7 am–7 pm <br><br>
+        Phone:-- <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107129.83593322297!2d73.61764183906244!3d32.95609475541648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90c0d04769c9%3A0x32bb51e48524b53!2sAltaf%20Park!5e0!3m2!1sen!2s!4v1705994868948!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  <div class="card" id="Childern Park">
+    <img src="{{ url_for('static', filename='t5.jpeg') }}" alt="Card Image 1">
+    <div class="card-content">
+      <h2>Childern Park</h2><br>
+      <p> Address: WP98+G66, Jhelum Cantt, Jhelum, Punjab 49600<br><br> Hours: All week, 8 am–9:30 pm <br><br>
+        Phone:--<br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107175.07946940431!2d73.63311387024612!3d32.91875266883964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90ecd7e224a5%3A0x70ce5700d9ba358c!2sChildern%20Park!5e0!3m2!1sen!2s!4v1705995087435!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  
+ 
+  <div class="card" id="River View Golf Park">
+    <img src="{{ url_for('static', filename='t6.jpeg') }}" alt="Card Image 2">
+    <div class="card-content">
+      <h2>River View Golf Park</h2><br>
+      <p> Address: WP98+G6Q, Jogging Track, Jhelum Cantt, Jhelum, Punjab 49600<br><br> Hours: All week, 6 am–6:30 pm <br><br>
+        Phone:-- <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107175.02436949057!2d73.63320417024809!3d32.918798168820366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f90ecd05dd375%3A0xfbd7737d19c2fce7!2sRiver%20View%20Golf%20Course%20Park!5e0!3m2!1sen!2s!4v1705995318156!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}'); background-size: cover; background-position: center;">
+  <div class="card" id="Hill View Park">
+    <img src="{{ url_for('static', filename='t7.jpeg') }}" alt="Card Image 3">
+    <div class="card-content">
+      <h2>Hill View Park</h2><br>
+      <p> Address:  2J2W+3J6, Street G24, Satellite Town, Satellite Town Jhelum, Jhelum, Punjab<br><br> Hours:All Week, 7 AM–7 PM <br><br>
+        Phone:-- <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107076.41853312076!2d73.56412847382337!3d33.000134934500934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f8df393fe0927%3A0x6605b49fea00c96d!2sHill%20View%20Park!5e0!3m2!1sen!2s!4v1705997198162!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="{{ url_for('static', filename='t8.jpeg') }}" alt="Card Image 1">
+    <div class="card-content">
+      <h2>Jhelum River Forest</h2><br>
+      <p> Address:WQR2+CM9, Jhelum, Punjab<br><br> Hours:24/7 <br><br>
+        Phone:--- <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53573.927640580085!2d73.71035614200011!3d32.94122685444555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f97fd2dfda121%3A0x50260920f5054b85!2sJhelum%20river%20Forest!5e0!3m2!1sen!2s!4v1705995636892!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  
+ 
+  <div class="card">
+    <img src="{{ url_for('static', filename='t9.jpeg') }}"alt="Card Image 2">
+    <div class="card-content">
+      <h2>Funland Modern Bazar</h2><br>
+      <p> Address: Modern bazar, Jada, Jhelum, Punjab 46000<br><br> Hours: All week, 10 am–6 pm <br><br>
+        Phone:0313-5558255 <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107132.83083196092!2d73.62659477177797!3d32.953624054099166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f911740db8137%3A0x6e509425b16fdf0b!2sFunland%20Modern%20Bazar%20Jhelum!5e0!3m2!1sen!2s!4v1705995841069!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}'); background-size: cover; background-position: center;">
+  <div class="card" id="Sunset View Park Mangla">
+    <img src="{{ url_for('static', filename='t10.jpeg') }}" alt="Card Image 3">
+    <div class="card-content">
+      <h2>Sunset View Park Mangla</h2><br>
+      <p> Address: 407 B St, Baral Colony, Mangla Cantonment, Jhelum, Punjab, Pakistan<br><br> Hours: All week, 6 am–11 pm<br><br>
+        Phone: -- <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.5314181081135!2d73.6047842742954!3d33.12140081630932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ff24ac8c3ed43%3A0x9d4c4e0d44dce6a6!2sSunset%20View%20Park%20MANGLA!5e0!3m2!1sen!2s!4v1705997578713!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img  src="{{ url_for('static', filename='t11.jpeg') }}"  alt="Card Image 1">
+    <div class="card-content">
+      <h2>Baral Park</h2><br>
+      <p> Address: 4JF8+R4C, Baral Colony, Mangla Cantonment, Jhelum, Punjab<br><br> Hours: All week, 8 am–6 pm <br><br>
+        Phone: 0321-4181384 <br> <br>Location:<br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26731.15347846949!2d73.59448731616327!3d33.12500731347687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ff23632164a21%3A0x914aa7af9af968f5!2sBaral%20Park!5e0!3m2!1sen!2s!4v1705998332309!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  
+ 
+  <div class="card">
+    <img src="{{ url_for('static', filename='t12.jpeg') }}" alt="Card Image 2">
+    <div class="card-content">
+      <h2>NMC Glow Park</h2><br>
+      <p> Address: Sarai Alamgir, Gujrat, Punjab<br><br> Hours: All week, 10 am–10 pm <br><br>
+        Phone:0300-0900188 <br> <br>Location:<br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107217.94655943495!2d73.6986499686918!3d32.883337283851034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f99e55e80e011%3A0x3783e55260b47507!2sNMC%20Glow%20park!5e0!3m2!1sen!2s!4v1705996147001!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}'); background-size: cover; background-position: center;">
+  <div class="card" id="Gulshan-E-Amber Park">
+    <img src="{{ url_for('static', filename='t14.jpeg') }}"alt="Card Image 3">
+    <div class="card-content">
+      <h2>Gulshan-E-Amber Park</h2><br>
+      <p> Address: VQJ9+HV, Sarai Alamgir, Gujrat, Punjab<br><br> Hours: 24/7<br><br>
+        Phone:-- <br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53609.94777594545!2d73.7279291166137!3d32.88172628549621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f9924278af091%3A0xe25f0e74e96b884b!2sGulshan-E-Amber%20Park!5e0!3m2!1sen!2s!4v1705996746964!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+      </p>
+    </div>
+  </div>
+
+  <div class="card" id="Lehri Natural Park">
+    <img src="{{ url_for('static', filename='t15.jpeg') }}" alt="Card Image 1">
+    <div class="card-content">
+      <h2>Lehri Natural Park</h2><br>
+      <p> Address:  5H4W+FJ6, Mangla Hamlet, Jhelum, Punjab<br><br> Hours: 24/7<br><br>
+        Phone:--<br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106886.70200353608!2d73.51411198070184!3d33.15612806929162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ff1ac6464fe59%3A0xef493937751f49b3!2sLehri%20Natural%20Park!5e0!3m2!1sen!2s!4v1705997050964!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+
+  
+  <div class="card" id="Sunset Park">
+    <img src="{{ url_for('static', filename='t13.jpeg') }}" alt="Card Image 2">
+    <div class="card-content">
+      <h2>Sunset Park</h2><br>
+      <p> Address: XR5R+PH7, Sarai Alamgir, Gujrat, Punjab, Pakistan<br><br> Hours: 24/7 <br><br>
+        Phone: --<br> <br>Location:
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213848.70830260986!2d73.45027134832208!3d33.12522063295008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f97f70433d68b%3A0xdc6b8a1bd6efcbde!2sSunset%20park!5e0!3m2!1sen!2s!4v1705998495738!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </div>
+</div> 
+<h4 style="font-size: xx-large; color: yellow; text-align: center;" id="TOWNS">TOWNS IN JHELUM</h4>
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}'); background-size: cover; background-position: center;">
+  <div class="card" id="Jhelum">
+    <img src="{{ url_for('static', filename='tjhelum.jpg') }}" alt="Card Image 3">
+    <div class="card-content">
+      <h2><center>Jhelum</center></h2>
+      <p><h4>Jhelum is a city on the East Bank of the Jhelum River, which is located in the district of Jhelum in the North of Punjab, Pakistan. It is the 44th largest city of Pakistan by population.<br>
+       <br> 
+       Postal code :49600<br>
+       Population:  190,425 (2017)<br>
+       Dialing code:  0544 <br>
+        District:  Jhelum <br>
+        Division:  Rawalpind </h4>
+
+       <center> <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Jhelum"> <strong> TO Explore More  </strong></a> </button>
+       </center>
+       
+    </div>
+  </div>
+
+  <div class="card" id="Sarai Alamgir">
+    <img src="{{ url_for('static', filename='tsaray.jpeg') }}"  alt="Card Image 3">
+    <div class="card-content">
+      <h2><center>Sarai Alamgir</center></h2>
+     <h4>Sarai Alamgir is the main town of Sarai Alamgir Tehsil, located in the Gujrat district in the north of the Punjab province of Pakistan. Sarai Alamgir is one of four tehsils of Gujrat district. <br>
+      <br>Population: Approximately 93,000 people.
+      Postal code:  49600.<br>
+      Dialing code: 0544<br>
+      District: Gujrat<br>
+      Division: Jhelum Division</h4>
+     <center> <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Sarai_Alamgir"> <strong> TO Explore More  </strong></a> </button>
+      </center>
+       
+    </div>
+  </div>
+
+  
+ 
+  <div class="card" id="Sohawa">
+    <img src="{{ url_for('static', filename='tsohawa.jpg') }}" alt="Card Image 1">
+
+    <div class="card-content">
+     <center> <h2>Sohawa</h2></center>
+    <h4>Sohawa is a town in the Punjab province of Pakistan, and is the capital of the Sohawa Tehsil. Sohawa has grown from a small village in 1947 to a large town in 2014, with major developments in transport, education and health.<br>
+    <br> District: Jhelum<br>
+     Postal code: 49230<br>
+     Province: Punjab<br>
+     Tehsil: Sohawa<br></h4>
+
+     <center> <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Sohawa"> <strong> TO Explore More  </strong></a> </button>
+     </center>
+     
+    </div>
+  </div>
+
+</div> 
+
+<div class="card-container" style="background-image: url('{{ url_for('static', filename='townback.JPG') }}'); background-size: cover; background-position: center;">
+
+
+  <div class="card" id="Dina">
+    <img src="{{ url_for('static', filename='tdina.JPG') }}" alt="Card Image 3">
+    <div class="card-content" >
+      <h2><center>Dina</center></h2>
+     <h4>Dina is a city in Jhelum District of Punjab the province of Pakistan. Dina is one of the oldest towns in Punjab. According to 2023 census, 50,737 people live in Dina, of which 34.12% were urban. <br>
+     <br> Postal code: 49400<br>
+      Dialing code: 0544<br>
+      District: Jhelum District<br>
+      Division: Rawalpindi</h4>
+       
+      <center> <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Dina,_Pakistan"> <strong> TO Explore More  </strong></a> </button>
+      </center>
+
+    </div>
+  </div>
+
+  
+ 
+  <div class="card" id="Jalalpur Sharif">
+    <img src="{{ url_for('static', filename='tjalapur.JPG') }}" alt="Card Image 2">
+    <div class="card-content">
+     <center> <h2>Jalalpur Sharif</h2></center>
+     <h4>Jalalpur Sharif is a town located in the Jhelum district in Punjab, Pakistan.<br>
+  
+      Population: Population of approximately 50,000 people<br>
+      <br>Postal code: 49600.<br>
+      Dialing Code:  0544<br>
+      District: Jhelum<br>
+      Division: Located in the Jhelum Division<br>
+      Tehsil: Pind Dadan Khan<br></h4>
+      <center> <button > <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Jalalpur_Sharif"> <strong> TO Explore More  </strong></a> </button>
+      </center>
+    </div>
+  </div>
+
+
+  <div class="card" id="Pind Dadan Khan">
+    <img src="{{ url_for('static', filename='tpdn.JPG') }}" alt="Card Image 2">
+    <div class="card-content">
+     <center> <h2>Pind Dadan Khan</h2></center>
+     <h4>Pind Dadan Khan, a city in Jhelum District, Punjab, Pakistan, is the capital of Pind Dadan Khan Tehsil, which is an administrative subdivision of the district. <br>
+    <br>  Neighborhoods: Kot Kalan, Bahari Colony, Allam Shah II, and MORE<br>
+      District: Jhelum District
+      <br> Postal code :49040<br>
+      Number of Union councils: 16<br></h4>
+
+      <center> <button> <a onclick="bookTable()" href="https://en.wikipedia.org/wiki/Pind_Dadan_Khan"> <strong> TO Explore More  </strong></a> </button>
+      </center>
+    </div>
+  </div>
+</div> 
+ </body>
+ <script src="{{ url_for('static', filename='script.js')}}"></script>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hospitals-css/hospitals.css') }}">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-12"> 
+        <nav>
+          <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                <i class='bx bx-x' ></i>
+              </div>
+              <ul class="links">
+                <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                <li>
+                  <a href="#">ShoppingPoints</a>
+                  <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                  <ul class="sp-sub-menu sub-menu">
+                    <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                    <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                    <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                    
+                  </ul>
+                </li>
+                <li>
+                  <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                  <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                  <ul class="edu-sub-menu sub-menu">
+                    <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                    <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                    <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                    <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Others</a>
+                  <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                  <ul class="other-sub-menu sub-menu">
+                    <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                    <li><a href="{{ url_for('service') }}">Services</a></li>
+                    <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                    <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                  </ul>
+                </li>
+                
+      
+              </ul>
+            </div>
+            <div class="search-box">
+              <i class='bx bx-search'></i>
+              <div class="input-box">
+                <input type="text" placeholder="Search..." id="search-input">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row" id="Hospitals ">
+      <div class="col">
+        <div class="card text-bg-dark ">
+          <img src="{{ url_for('static', filename='hospital-img/1.png')}}" class="card-img " alt="...">
+          <div class="typewriter">
+            <h1> Best Hospitals  </h1>
+          </div>
+          <div class="card-img-overlay">
+            
+            <h1 class="card-title "></h1>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br>
+<div class="row"  id="DHQ">
+  <h1>DHQ</h1> 
+<br>
+  <div class="col-lg-4 col-sm-12 "> <center><img src="{{ url_for('static', filename='hospital-img/dhq.png')}}"alt="dhq" > </center>
+    
+  </div>
+  <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+    
+    <p>The Government of Punjab is making strenuous efforts for a better and effective Health Care system .The Defining step in this direction was to recognize the importance of Health Care at Primary & Secondary Levels. As a first step towards better health care at primary and secondary level, a separate department was created. The basic mandate of Primary & Secondary Health Department is to focus on preventive health care in primary sector along with basic diagnostics and treatment facilities at secondary level. The context is to primarily lessen the load on tertiary care health facilities.Newly established District Head Quarter Hospital Jhelum was inaugurated on 10-05-2018.  Whether a patient is coming in for a routine or a specialized procedure, they will always benefit from Strong’s unique ability to quickly implement the newest discoveries and advancements in medicine.</p>
+  
+  <a href="{{ url_for('dhq') }}"><button type="button" class="btn btn-outline-success">View Detail</button></a></div>
+  
+ 
+
+</div>
+<br> <br>
+
+<div class="row" id="AHD">
+  <h1>AHD</h1> 
+<br>
+  <div class="col-lg-4 col-sm-12 "> <center><img src="{{ url_for('static', filename='hospital-img/ahd.png')}}"alt="dhq" >  </center>
+  </div>
+  <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+    
+    <p>Afzal Hospital & Dental Clinic is a State of the Art 40 bedded multi-specialty hospital. It is strategically located at a prime location in Machine Mohalla No 3, Jhelum, Pakistan. The hospital comprises of modern operation theaters, Intensive Care, Labor and Delivery Rooms. Highly qualified and experienced team of Consultants, Doctors, Nurses, Paramedical Staff and other Professionals run various departments of the hospital and ensure provision of quality medical services to the Patients. The hospital is equipped with advanced technology and sophisticated equipment to provide world class health care.</p>
+    
+    <a href="{{ url_for('ahd') }}"><button type="button" class="btn btn-outline-success">View Detail</button></a>
+  </div>
+</div>
+  <br> <br>
+
+<div class="row" id="Cardiac Center">
+  <h1>Cardiac Center </h1> 
+<br>
+  <div class="col-lg-4 col-sm-12 "> <center><img src="{{ url_for('static', filename='hospital-img/ccj.png') }}" class="ccj" alt="ccj"> </center>
+  </div>
+  <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+    
+    <p>A cardiac centre is a type of specialty hospital where cardiovascular illnesses are diagnosed, treated, and managed. These facilities are manned by highly qualified medical specialists, such as cardiologists, heart surgeons, nurses, and support personnel, and are furnished with cutting edge medical equipment. They provide an extensive array of services, which includes heart diagnostics including cardiac catheterization, stress testing, and echocardiography. They also offer cardiac surgeries, including bypass surgery, valve replacement or repair, and heart transplants, as well as medical care of cardiac diseases and interventional cardiology procedures like angioplasty and stent implantation. Cardiac centres also place a high priority on preventive cardiology, providing services and programmes targeted at lowering heart disease risk factors via education and lifestyle changes.</p>
+    <a href="{{ url_for('cardic') }}"><button type="button" class="btn btn-outline-success">View Detail</button></a>
+  </div>
+  </div>
+
+<br><br>
+    <div class="row" id="Fauji Foundation">
+     <h1>Fauji Foundation </h1> 
+    <br>
+      <div class="col-lg-4 col-sm-12 "> <center> <img src="{{ url_for('static', filename='hospital-img/ffj.png') }}" class="ccj" alt="ccj"></center>
+      </div>
+      <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+        
+        <p>Fauji Foundation provides a range of medical services, including specialist treatments across multiple disciplines, operations, tests, and consultations. In keeping with its dedication to community welfare, the hospital offers its services to civilians even though it is affiliated with the military. The hospital makes investments in cutting-edge medical technology and equipment with an emphasis on upholding high standards of care, ensuring precise diagnosis and efficient treatments. It also makes an effort to maintain its services reasonably priced, encouraging everyone to have access to healthcare. Fauji Foundation Hospital makes a substantial contribution to the general well-being of the area it serves by treating illnesses and actively pursuing preventative healthcare through community outreach programmes and health education efforts.
+        </p>
+        <a href="{{ url_for('faujiF') }}"><button type="button" class="btn btn-outline-success">View Detail</button></a>
+      </div>
+  
+</div>
+
+
+<br><br>
+    <div class="row" id="Sarmad Hospital">
+     <h1>Sarmad Hospital </h1> 
+    <br>
+      <div class="col-lg-4 col-sm-12 "> <center> <img src="{{ url_for('static', filename='hospital-img/sh.png') }}" class="ccj" alt="ccj"></center>
+      </div>
+      <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+        <br>
+        <p>Patient satisfaction and the best healthcare facilities are what make Sarmad Hospital stand out in Major Akram Shaheed Road near Muhammadi Furniture Chishtiyan Mohalla of Jhelum. Sarmad Hospital is known for its excellent services, fully trained paramedical staff, up-to-date medical technology, and best-certified doctors to help patients in need.
+        </p>
+        <br>
+        <a href="{{ url_for('sarmad') }}"><button type="button" class="btn btn-outline-success">View Detail</button></a>
+      </div>
+</div>
+
+<br><br>
+    <div class="row" id="CMH">
+     <h1>Combined Military Hospital </h1> 
+    <br>
+      <div class="col-lg-4 col-sm-12 "> <center><img src="{{ url_for('static', filename='hospital-img/cmh.png') }}" class="ccj" alt="ccj"> </center>
+      </div>
+      <div class="col-lg-8 col-sm-12"  data-aos="fade-right">
+        <br>
+        <p>C.M.H. - The Combined Military Hospital (CMH) located in Jhelum is a distinguished healthcare establishment celebrated for its provision of superior treatment and recuperative services. Its scope extends beyond military personnel, encompassing their families and the wider public, positioning CMH as a frontrunner in specialized medical attention. Backed by cutting-edge technology and a team of doctors, CMH Jhelum, is unwavering in its dedication to providing optimal healthcare to its valued patients.
+        </p>
+        
+       <a href="{{ url_for('cmh') }}"> <button type="button" class="btn btn-outline-success">View Detail</button></a>
+      </div>
+</div>
+
+
+<footer>
+  <div class="col copy">
+    &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+</div>
+</footer>
+
+
+
+
+
+   </div> 
+</body>
+<script src="{{ url_for('static', filename='boostrap/boostrap.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

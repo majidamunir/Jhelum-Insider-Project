@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHQ</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='JI-logo.ico') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='boostrap/boostrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hospitals-css/dhq.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        
+
+        <div class="row">
+          <div class="col">
+            <nav>
+              <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="{{ url_for('home_page') }}"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></a></div>
+                <div class="nav-links">
+                  <div class="sidebar-logo">
+                    <span class="logo-name"><img src="{{ url_for('static', filename='JI-logo.png')}}" alt="" srcset=""></span>
+                    <i class='bx bx-x' ></i>
+                  </div>
+                  <ul class="links">
+                    <li><a href="{{ url_for('home_page') }}">HOME</a></li>
+                    <li><a href="{{ url_for('historical_places') }}">HistoricalPlaces</a></li>
+                    <li><a href="{{ url_for('fp') }}">FoodPoints</a></li>
+                    <li>
+                      <a href="#">ShoppingPoints</a>
+                      <i class='bx bxs-chevron-down sp-arrow arrow  '></i>
+                      <ul class="sp-sub-menu sub-menu">
+                        <li><a href="{{ url_for('brand') }}">Brands</a></li>
+                        <li><a href="{{ url_for('local') }}">Local Shops</a></li>
+                        <li><a href="{{ url_for('marts') }}">Local Marts</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="{{ url_for('edu') }}">EducationalInstitues</a>
+                      <i class='bx bxs-chevron-down edu-arrow arrow  '></i>
+                      <ul class="edu-sub-menu sub-menu">
+                        <li><a href="{{ url_for('edu') }}">Schools</a></li>
+                        <li><a href="{{ url_for('edu') }}">Colleges</a></li>
+                        <li><a href="{{ url_for('edu') }}">Universities</a></li>
+                        <li><a href="{{ url_for('edu') }}">Islamic Centers</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Others</a>
+                      <i class='bx bxs-chevron-down other-arrow arrow  '></i>
+                      <ul class="other-sub-menu sub-menu">
+                        <li><a href="{{ url_for('hospital') }}">Hospitals</a></li>
+                        <li><a href="{{ url_for('service') }}">Services</a></li>
+                        <li><a href="{{ url_for('Software_Houses') }}">SoftwareHouses</a></li>
+                        <li><a href="{{ url_for('town_parks') }}">Parks&Towns</a></li>
+                      </ul>
+                    </li>
+                    
+          
+                  </ul>
+                </div>
+                <div class="search-box">
+                  <i class='bx bx-search'></i>
+                  <div class="input-box">
+                    <input type="text" placeholder="Search..." id="search-input">
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+      </div>
+  
+        
+          <div class="row">
+            <div class="col">
+              <div class="card text-bg-dark " data-aos="fade-right">
+                <img src="{{ url_for('static', filename='hospital-img/1.png')}}" class="card-img " alt="dhq1">
+                <div class="typewriter">
+                  <h1> SERVING WITH PRIDE </h1>
+                </div>
+                <div class="card-img-overlay">
+                  
+                  <h1 class="card-title "></h1>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 "><img src="{{ url_for('static', filename='hospital-img/dhq.png')}}" class="dhq" alt="dhq" >
+               &nbsp;&nbsp;
+              <a href="https://dhqjhelum.punjab.gov.pk/"><h1 class="h1-dhq">DHQ Hospital Jhelum</h1></a>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <br>
+                
+                <h6><i class="bi bi-telephone text-sucess"></i>  +92-544-920262
+                    &nbsp;&nbsp;</h6> 
+                    <h6><i class="bi bi-envelope"></i> 	 itdhqjhelum@gmail.com</h6>
+            </div>
+        </div>
+<br>
+<div class="row" class="p"><div class="col" data-aos="fade-right">
+  
+<p id="about">The Government of Punjab is making strenuous efforts for a better and effective Health Care system .The Defining step in this direction was to recognize the importance of Health Care at Primary & Secondary Levels. As a first step towards better health care at primary and secondary level, a separate department was created. The basic mandate of Primary & Secondary Health Department is to focus on preventive health care in primary sector along with basic diagnostics and treatment facilities at secondary level. The context is to primarily lessen the load on tertiary care health facilities.Newly established District Head Quarter Hospital Jhelum was inaugurated on 10-05-2018.  Whether a patient is coming in for a routine or a specialized procedure, they will always benefit from Strong’s unique ability to quickly implement the newest discoveries and advancements in medicine. A few of Strong’s many highly specialized services include:​
+<ul><li>Upgraded as DHQ Hospital since 1961</li>
+<li>Total number of Beds: 400</li>
+<li>Total area: 1080000 sq ft  200 Kanal</li>
+<li>Covered area: 608000 sq ft</li>
+<li>Uncovered area: 472000 sq ft</li>
+<li>Total Numbe of Staff: 606</li>
+<li>Average OPD:1624</li>
+<li>Average IPD:105</li>
+<li>Average Emergency:545</li></ul>
+  
+  The major challenge for Primary & Secondary Health Department is to boost the confidence of general public in the primary health care system. The reality is that most of the institutions at secondary level are not currently providing health care services up to the desired level, owing to multiple factors including large patient influx, scarcity of resources, human resource deficiency and non-functional equipment. Due to lack of planning and monitoring, the past efforts did not conclude in the shape of integrated health care regime rather these have resulted in haphazard construction, poor maintenance, lack of basic facilities, absence of waiting areas and shabby outlook. Resultantly the patients prefer to visit tertiary level hospitals for treatment of even very common ailments. With this in view, the department under the guidance of CM Punjab has decided to launch massive revamping of 40 THQ & DHQ Hospitals in the current financial year.</p>
+
+</div></div>
+<br>
+<h1 id="Serivices">Medical Services</h1>
+<br>
+<div class="row">
+  <div class="col-10">
+  <h2>Clinical</h2></div>
+  <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card service-cards" data-aos="fade-up">
+    <img src="{{ url_for('static', filename='hospital-img/ct.png')}}" class="card-img-top ct-icon" alt="icon">
+    <div class="card-body">
+      
+     <a href="https://dhqjhelum.punjab.gov.pk/msctscan"> <h5 class="card-title">CT Scan</h5></a>
+     </div>
+  </div> 
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card service-cards" data-aos="fade-up">
+      <img src="{{ url_for('static', filename='hospital-img/dental.png')}}" class="card-img-top dental-icon" alt="icon">
+      <div class="card-body">
+        
+       <a href="https://dhqjhelum.punjab.gov.pk/msdental"> <h5 class="card-title">Dental</h5></a>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card service-cards" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='hospital-img/skin.png')}}" class="card-img-top cardic-icon" alt="icon">
+        <div class="card-body">
+          
+         <a href="https://dhqjhelum.punjab.gov.pk/msdermatology"> <h5 class="card-title">Dermatology</h5></a>
+        </div>
+      </div>
+      </div>
+    
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card service-cards" data-aos="fade-up">
+          <img src="{{ url_for('static', filename='hospital-img/ent.png')}}" class="card-img-top ent-icon" alt="icon">
+          <div class="card-body">
+            
+           <a href="https://dhqjhelum.punjab.gov.pk/msent"> <h5 class="card-title">ENT</h5></a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card service-cards" data-aos="fade-up" >
+            <img src="{{ url_for('static', filename='hospital-img/cardic.png')}}" class="card-img-top ent-icon" alt="icon">
+            <div class="card-body">
+              
+             <a href="https://dhqjhelum.punjab.gov.pk/mscardiology"> <h5 class="card-title">Cardiology</h5></a>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card service-cards" data-aos="fade-up">
+              <img src="{{ url_for('static', filename='hospital-img/optical.png')}}" class="card-img-top ent-icon" alt="icon">
+              <div class="card-body">
+                
+               <a href="https://dhqjhelum.punjab.gov.pk/msophthalmology"> <h5 class="card-title">Ophthalmology</h5></a>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card service-cards" data-aos="fade-up">
+                <br>
+                <img src="{{ url_for('static', filename='hospital-img/Gynaecology.png')}}" class="card-img-top ent-icon" alt="icon">
+                <div class="card-body">
+                  
+                 <a href="https://dhqjhelum.punjab.gov.pk/msgynaecology"> <h5 class="card-title">Gynaecology</h5></a>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card service-cards" data-aos="fade-up">
+                  <img src="{{ url_for('static', filename='hospital-img/Urology.png')}}" class="card-img-top ent-icon" alt="icon">
+                  <div class="card-body">
+                    
+                   <a href="https://dhqjhelum.punjab.gov.pk/msurology"> <h5 class="card-title">Urology</h5></a>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="card service-cards" data-aos="fade-up">
+                    <img src="{{ url_for('static', filename='hospital-img/Orthopaedics.png')}}" class="card-img-top ent-icon" alt="icon">
+                    <div class="card-body">
+                      
+                     <a href="https://dhqjhelum.punjab.gov.pk/msorthopaedics"> <h5 class="card-title">Orthopaedics</h5></a>
+                    </div>
+                  </div>
+                  </div>
+
+</div>
+<br>
+
+<div class="row">
+
+  <h2>Diagnostic</h2>
+  <div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card service-cards" >
+    <img src="{{ url_for('static', filename='hospital-img/Radiology.png')}}" class="card-img-top ct-icon" alt="icon">
+    <div class="card-body">
+      
+     <a href="https://dhqjhelum.punjab.gov.pk/msradiology"> <h5 class="card-title">Radiology</h5></a>
+    </div>
+  </div> 
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card service-cards" >
+      <img src="{{ url_for('static', filename='hospital-img/surgery.png')}}" class="card-img-top ct-icon" alt="icon">
+      <div class="card-body">
+        
+       <a href="https://dhqjhelum.punjab.gov.pk/surgery"> <h5 class="card-title">Surgery</h5></a>
+      </div>
+    </div> 
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card service-cards" >
+        <img src="{{ url_for('static', filename='hospital-img/Trauma-Center.png')}}" class="card-img-top ct-icon" alt="icon">
+        <div class="card-body">
+          
+         <a href="https://dhqjhelum.punjab.gov.pk/mstraumacenter"> <h5 class="card-title">Trauma</h5></a>
+        </div>
+      </div> 
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card service-cards" >
+          <img src="{{ url_for('static', filename='hospital-img/emergancy.png')}}" class="card-img-top ct-icon" alt="icon">
+          <div class="card-body">
+            
+           <a href="https://dhqjhelum.punjab.gov.pk/medicalemergency"> <h5 class="card-title">Emergency</h5></a>
+          </div>
+        </div> 
+        </div>
+
+</div>
+<br>
+<div class="row">
+
+  <h1 id="Contact">Contact</h1>
+  
+  <div class="col-12">
+    <br><br> <br>
+    <h4><i class="bi bi-geo-alt"></i> Old G.T. Road, Jada, Jhelum</h4>
+  </div>
+  <div class="col-12">
+    <h4><i class="bi bi-telephone-fill"></i> 	+92-544-920262</h4>
+  </div>
+  <div class="col-12">
+    <h4><a href="http://">
+      <i class="bi bi-facebook"></i></a>
+<a href="mailto:itdhqjhelum@gmail.com">
+      <i class="bi bi-envelope-fill"></i></a></h4>
+  </div>
+ <center> <div class="col-12" id="map" data-aos="fade-up"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13392.599080413214!2d73.716822!3d32.947055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f911bec77b987%3A0xa8a930485ba4841!2sDHQ%20Hospital%20Jhelum!5e0!3m2!1sen!2sus!4v1711868162426!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></center>
+</div>
+
+
+
+
+
+
+<footer>
+  <div class="col copy">
+    &copy; Copyright <strong><span>JhelumInsider</span></strong>. All Rights Reserved
+</div>
+</footer>
+
+    </div>
+</body>
+<script src="{{ url_for('static', filename='boostrap/boostrap.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
