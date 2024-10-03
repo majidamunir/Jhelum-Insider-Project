@@ -6,15 +6,17 @@ Jhelum Insider is a web application designed to provide a robust backend powered
 
 ## Features
 
-**Flask Backend:** A lightweight and flexible backend framework that provides RESTful APIs for data handling.
-**User-Friendly Frontend:** A simple yet effective interface designed with HTML, CSS, and JavaScript to enhance user experience.
-**Docker Integration:** Simplifies deployment and scaling of the application, allowing it to run consistently in any environment.
-**Scalable Architecture:** Easily extendable to accommodate future features and improvements.
+1. **Flask Backend:** A lightweight and flexible backend framework that provides RESTful APIs for data handling.
+2. **User-Friendly Frontend:** A simple yet effective interface designed with HTML, CSS, and JavaScript to enhance user experience.
+3. **Docker Integration:** Simplifies deployment and scaling of the application, allowing it to run consistently in any environment.
+4. **Scalable Architecture:** Easily extendable to accommodate future features and improvements.
 
 ## Technologies Used
 
 **Backend:** Flask
+
 **Frontend:** HTML, CSS, JavaScript
+
 **Containerization:** Docker
 
 ## Getting Started
@@ -22,26 +24,28 @@ Jhelum Insider is a web application designed to provide a robust backend powered
 ### Prerequisites
 
 Docker installed on your machine.
+
 Basic knowledge of Flask and web development.
 
 ### Installation
 
 1. **Clone the Repository:**
 
-git clone https://github.com/majidamunir/jhelum-insider.git
-cd jhelum-insider
+   git clone https://github.com/majidamunir/jhelum-insider.git
+
+   cd jhelum-insider
 
 2. **Build the Docker Image:**
 
-docker build -t jhelum-insider .
+   docker build -t jhelum-insider .
 
 3. **Run the Docker Container:**
-
-docker run -p 5000:5000 jhelum-insider
+   
+   docker run -p 5000:5000 jhelum-insider
 
 4. **Access the Application:**
-
-Open your web browser and navigate to http://localhost:5000.
+   
+   Open your web browser and navigate to http://localhost:5000.
 
 ## Usage
 
